@@ -1,0 +1,107 @@
+/* configure.html, the order slip (Figma desktop / configure 12267:5206, menu open 12350:5206, length typing 12350:5323;
+   mobile / configure 12176:3159, menu open 12350:5506, length typing 12350:5607; mains blank / menu 12351:5602, blank / input 12351:5490) */
+
+.cfg-band{padding:80px 0 120px}
+.cfg-sheet{position:relative;display:flex;flex-direction:column;gap:48px;padding:72px 120px 72px 168px;background:#fff;filter:drop-shadow(0 16px 24px rgba(27,32,51,.12))}
+.cfg-sheet::before,.cfg-sheet::after{content:"";position:absolute;top:0;bottom:0;width:2px;background:var(--red)}
+.cfg-sheet::before{left:96px}.cfg-sheet::after{left:102px}
+.cfg-head{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.cfg-head .cap{white-space:pre}
+.cfg-head p:last-child{font-size:14px;line-height:1.55;color:var(--slate);text-align:right}
+
+/* the sentence: Caslon heading / slip 48 at 1920, scaling down fluidly (42 at 1440); blanks are boxes on the surface fill with upright red Caslon */
+.cfg-sent{--slip:clamp(32px,calc(24px + 1.25vw),48px);display:flex;flex-wrap:wrap;align-items:baseline;gap:18px 14px;font-family:var(--serif);font-size:var(--slip);line-height:1.2;letter-spacing:-.035em;color:var(--navy)}
+/* Figma's measure: the sentence is 816 wide at 48px, so 17em scales with the clamp */
+.cfg-sent{max-width:17em}
+.cfg-sent>span{white-space:nowrap}
+.cfg-grp{display:inline-flex;align-items:baseline;column-gap:inherit;white-space:nowrap}
+.cfg-grp>span{white-space:nowrap}
+.cfg-blank{display:inline-flex;align-items:center;gap:18px;padding:12px 12px 12px 24px;border-radius:4px;background:var(--surface);font-family:var(--serif);font-size:var(--slip);line-height:1.2;letter-spacing:-.035em;color:var(--red);white-space:nowrap;transition:background-color .3s,box-shadow .3s}
+.cfg-blank svg{display:block;flex:none;width:24px;height:24px;transition:transform .35s var(--ease)}
+.cfg-blank svg path{fill:none;stroke:var(--red);stroke-width:2.67;stroke-linecap:round;stroke-linejoin:round}
+.cfg-blank:hover{background:#e3e7ee}
+.cfg-blank[aria-expanded=true] svg{transform:rotate(180deg)}
+.cfg-blank:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+.cfg-blank .cfg-v{display:inline-block;line-height:1.2}
+.cfg-blank.flash .cfg-v{animation:cfgFlash .5s var(--ease)}
+@keyframes cfgFlash{40%{transform:translateY(-6px)}}
+/* the length: a typed input box with a red underline and no chevron; it sizes to its digits */
+.cfg-in{padding:12px 24px;border-bottom:2px solid var(--red);cursor:text}
+.cfg-in:focus-within{background:#e3e7ee}
+.cfg-iw{display:inline-grid}
+.cfg-iw::after{content:attr(data-v);visibility:hidden;white-space:pre;grid-area:1/1}
+.cfg-iw input{grid-area:1/1;width:0;min-width:100%;padding:0;border:0;outline:0;background:none;font:inherit;letter-spacing:inherit;color:inherit;caret-color:var(--red)}
+.cfg-help{font-size:14px;line-height:1.55;color:var(--slate)}
+.cfg-help[hidden]{display:none}
+
+/* the foot: red Total above the figure, the breakdown over the button */
+.cfg-foot{display:flex;flex-direction:column}
+.cfg-foot>i{display:block;height:1px;background:var(--rule2)}
+.cfg-tn{display:flex;align-items:flex-end;gap:64px;padding-top:40px}
+.cfg-total{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;font-family:var(--serif);white-space:nowrap}
+.cfg-total span{font-size:32px;line-height:1.25;letter-spacing:-.01em;color:var(--red)}
+.cfg-total strong{font-weight:400;font-size:64px;line-height:1.2;letter-spacing:-.035em}
+.cfg-bn{flex:none;width:440px;display:flex;flex-direction:column;gap:24px}
+.cfg-why{font-size:14px;line-height:1.55;color:var(--slate)}
+.cfg-why span{display:block}
+
+/* the menu: a white list under the blank on desktop, a bottom sheet over a dimmed page on mobile */
+.cfg-menu{position:absolute;z-index:40;width:360px;padding:8px 0;background:#fff;border:1px solid var(--rule2);border-radius:2px;box-shadow:0 16px 40px -8px rgba(27,32,51,.14);overflow:hidden}
+.cfg-menu[hidden],.cfg-dim[hidden]{display:none}
+.cfg-menu.open{animation:cfgPop .28s var(--ease)}
+@keyframes cfgPop{from{opacity:0;transform:translateY(-6px)}}
+.cfg-handle,.cfg-mt{display:none}
+.cfg-opts{max-height:min(60vh,420px);overflow-y:auto;overscroll-behavior:contain}
+.cfg-opt{display:flex;align-items:center;gap:12px;width:100%;padding:14px 20px;text-align:left;font-size:17px;line-height:1.6;color:var(--slate);transition:background-color .2s}
+.cfg-opt i{flex:none;width:16px;height:16px}
+.cfg-opt i svg{display:none;width:16px;height:16px}
+.cfg-opt b{flex:1 1 0;min-width:0;font-weight:400}
+.cfg-opt small{flex:none;font-size:14px;line-height:1.55;color:var(--grey2);white-space:nowrap}
+.cfg-opt:hover,.cfg-opt.hi{background:var(--surface)}
+.cfg-opt[aria-selected=true] b{font-weight:600;color:var(--navy)}
+.cfg-opt[aria-selected=true] i svg{display:block}
+.cfg-opt:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
+.cfg-dim{position:fixed;inset:0;z-index:39;background:rgba(18,22,42,.55)}
+
+@media (max-width:1500px){
+  .cfg-sheet{padding:64px 72px 64px 140px}
+  .cfg-sheet::before{left:80px}.cfg-sheet::after{left:86px}
+}
+@media (max-width:1180px){
+  .cfg-tn{flex-direction:column;align-items:stretch;gap:32px}
+  .cfg-bn{width:auto}
+}
+@media (max-width:760px){
+  .cfg-band{padding:32px 0}
+  .cfg-band .wrap{width:calc(100% - 48px)}
+  .cfg-sheet{gap:28px;padding:32px 24px}
+  .cfg-sheet::before,.cfg-sheet::after{display:none}
+  .cfg-head{flex-direction:column;align-items:flex-start;gap:6px}
+  .cfg-head p:last-child{text-align:left}
+  .cfg-sent{gap:14px 9px;font-size:32px;line-height:1.25;letter-spacing:-.01em;max-width:none}
+  .cfg-grp{display:contents}
+  .cfg-blank{gap:8px;padding:6px 8px 6px 16px;font-size:32px;line-height:1.25;letter-spacing:-.01em}
+  .cfg-blank svg{width:14px;height:14px}
+  .cfg-blank svg path{stroke:var(--navy);stroke-width:3.4}
+  .cfg-in{padding:6px 16px}
+  .cfg-foot{gap:28px}
+  .cfg-tn{padding-top:0;gap:28px}
+  .cfg-total{gap:8px}
+  .cfg-total span{font-size:20px;line-height:1.3;letter-spacing:0}
+  .cfg-total strong{font-size:32px;line-height:1.25;letter-spacing:-.01em}
+  .cfg-bn{gap:28px}
+  .cfg-why{margin-top:-20px}
+  .cfg-why span{display:inline}
+  .cfg-dim{z-index:60}
+  .cfg-menu{z-index:61;position:fixed;left:0!important;right:0;top:auto!important;bottom:0;width:auto;padding:12px 0 40px;border:0;border-radius:16px 16px 0 0;box-shadow:0 -12px 40px rgba(18,22,42,.2)}
+  .cfg-menu.open{animation:cfgSheet .32s var(--ease)}
+  @keyframes cfgSheet{from{transform:translateY(100%)}}
+  .cfg-handle{display:block;width:40px;height:4px;margin:0 auto;border-radius:999px;background:var(--rule2)}
+  .cfg-mt{display:block;padding:20px 24px 12px;font-family:var(--serif);font-size:20px;line-height:1.3;color:var(--navy)}
+  .cfg-opt{padding:18px 24px;position:relative}
+  .cfg-opt+.cfg-opt::before{content:"";position:absolute;left:24px;right:24px;top:0;height:1px;background:var(--line2)}
+  .cfg-opt:hover,.cfg-opt.hi{background:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .cfg-menu.open{animation:none}
+}

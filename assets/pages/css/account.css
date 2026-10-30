@@ -1,0 +1,188 @@
+/* account family: account.html, account-downloads.html, account-invoices.html, account-details.html
+   Figma desktop 12243:5566, 12244:5723 (empty 12244:5900), 12244:6051, 12244:6235
+   mobile 12178:4700 (menu open 12249:5452), 12178:4896 (empty 12178:5080), 12178:5236, 12178:5428.
+   An ink hero with the nav inside it, then a paper body. */
+
+/* hero */
+.acc-hero{padding-bottom:0}
+.acc-hero .wrap{display:flex;flex-direction:column;gap:72px;padding-top:56px}
+.acc-title{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.acc-copy{display:flex;flex-direction:column;gap:8px;white-space:nowrap}
+.acc-copy .pen{font-size:28px;line-height:1.5;color:var(--lred);padding-right:.15em}
+.acc-copy h1{font-family:var(--serif);font-weight:400;font-size:72px;line-height:1.1;letter-spacing:-.035em;color:#fff}
+.acc-copy h1 i{color:var(--lred)}
+.acc-who{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right}
+.acc-who b{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.3;color:#fff}
+.acc-who span,.acc-who-m{font-size:14px;line-height:1.55;color:var(--ondark)}
+.acc-dot{padding:0 8px}
+.acc-out{color:var(--ondark);transition:color .3s}
+.acc-out:hover{color:var(--lred)}
+.acc-who-m{display:none}
+
+/* live order tracker (overview) */
+.acc-live{display:flex;flex-direction:column;gap:40px}
+.acc-live-h{display:flex;flex-direction:column;gap:8px}
+.acc-live-h .cap{color:var(--ondark);white-space:pre-wrap}
+.acc-live-h h2{font-family:var(--serif);font-weight:400;font-size:32px;line-height:1.25;letter-spacing:-.01em;color:#fff}
+.acc-track{display:flex;align-items:flex-start;list-style:none}
+.acc-stage{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.acc-stage:last-child{flex:0 0 134px;align-items:flex-end;text-align:right}
+.acc-node-row{display:flex;align-items:center;width:100%}
+.acc-stage:last-child .acc-node-row{flex-direction:row-reverse}
+.acc-node{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:2px solid var(--bdark)}
+.acc-node svg{width:16px;height:16px}
+.acc-stage.done .acc-node{background:var(--lred);border-color:var(--lred)}
+.acc-stage.now .acc-node{border:3px solid var(--lred)}
+.acc-stage.now .acc-node::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--lred)}
+.acc-line{flex:1 1 auto;height:2px;background:var(--bdark);transform-origin:0 50%}
+.acc-stage.done .acc-line{height:3px;background:var(--lred)}
+.acc-stage:last-child .acc-line{transform-origin:100% 50%}
+.acc-sname{font-family:var(--serif);font-size:24px;line-height:1.3;color:var(--ondark);white-space:nowrap}
+.acc-stage.done .acc-sname,.acc-stage.now .acc-sname{color:#fff}
+.acc-snote{font-size:14px;line-height:1.55;color:var(--ondark);white-space:nowrap}
+.acc-snote.pen{font-size:22px;line-height:1.2;color:var(--lred);padding-right:.15em}
+.acc-snote:empty{display:none}
+
+/* account links row (desktop) and account menu (mobile) */
+.acc-links{display:flex;gap:48px;padding:24px 0;border-top:1px solid var(--bdark)}
+.acc-links a{font-weight:600;font-size:17px;line-height:1.2;color:var(--ondark);white-space:nowrap;transition:color .3s}
+.acc-links a:hover{color:#fff}
+.acc-links a[aria-current]{color:var(--lred);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.acc-menu{display:none;padding-bottom:32px}
+
+/* paper body */
+.acc-body{position:relative;padding:104px 0;background:var(--bg) url(../img/account-paper.jpg) center/cover;border-top:1px solid var(--rule2)}
+.acc-body .wrap{display:flex;flex-direction:column;gap:40px}
+.acc-lead{width:640px;max-width:100%;font-size:20px;line-height:1.55;color:var(--slate)}
+
+/* overview cards */
+.acc-cards{display:flex;gap:24px;align-items:stretch}
+.acc-card{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;padding:40px;background:#fff;border:1px solid var(--rule2)}
+.acc-card h2{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.3}
+.acc-row{display:flex;justify-content:space-between;gap:16px;font-size:17px;line-height:1.6}
+.acc-row span{min-width:0;overflow-wrap:anywhere}
+.acc-row span+span{color:var(--slate);text-align:right;white-space:nowrap}
+.acc-card .tlink{align-self:flex-start}
+.acc-card button.tlink{font:inherit;font-size:14px;line-height:1.55}
+.acc-none{font-size:17px;line-height:1.6;color:var(--slate)}
+
+/* tables (downloads, invoices) */
+.acc-table{display:flex;flex-direction:column;border-bottom:1px solid var(--rule2)}
+.acc-thead,.acc-tr{display:flex;gap:32px}
+.acc-thead{padding-bottom:16px}
+.acc-thead span{font-size:12px;font-weight:500;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--grey2)}
+.acc-tr{align-items:center;padding:24px 0;border-top:1px solid var(--rule2)}
+.acc-tr span{font-size:17px;line-height:1.6;color:var(--slate)}
+.acc-tr .acc-piece{font-family:var(--serif);font-size:24px;line-height:1.3;color:var(--navy)}
+.acc-c1{flex:0 0 200px}.acc-c2{flex:0 0 320px}.acc-c3{flex:1 1 0;min-width:0}.acc-c4{flex:0 0 220px}.acc-c5{flex:0 0 200px;display:flex;justify-content:flex-end;text-align:right}
+.acc-inv .acc-c1{flex-basis:200px}.acc-inv .acc-c2{flex:1 1 0;min-width:0}.acc-inv .acc-c3{flex:0 0 176px}
+/* invoices money: Subtotal 112, Discount 192, Total 112 (Figma 12244:6051); a stack on mobile */
+.acc-money{display:contents}
+.acc-inv .acc-m{display:block;flex:0 0 112px;white-space:nowrap}.acc-inv .acc-disc{flex-basis:192px}
+.acc-inv .acc-ml{display:none}
+.acc-inv .acc-c5{min-width:0;flex:0 0 200px}.acc-inv .acc-c5 .btn{flex:none}
+.acc-tr .acc-m span{font-size:17px;line-height:1.6;color:var(--slate)}
+.acc-thead .acc-c5{display:block}
+
+/* empty state */
+.acc-empty{display:flex;flex-direction:column;align-items:center;gap:24px;padding:96px 0;text-align:center}
+.acc-empty .pen{font-size:28px;line-height:1.5;padding-right:.15em}
+.acc-empty p:not(.pen){width:560px;max-width:100%;font-size:20px;line-height:1.55;color:var(--slate)}
+
+/* details */
+.acc-details{display:flex;gap:24px;align-items:stretch}
+.acc-panel{display:flex;flex-direction:column;gap:24px;align-items:flex-start;padding:40px;background:var(--bg);border-radius:2px}
+.acc-panel.p1{flex:1 1 0;min-width:0}
+.acc-panel.p2{flex:0 0 560px}
+.acc-panel h2{font-family:var(--serif);font-weight:400;font-size:32px;line-height:1.25;letter-spacing:-.01em}
+.acc-panel h3{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.3}
+.acc-panel .field{width:100%}
+.acc-pair{display:flex;gap:16px;width:100%}
+.acc-pair .field{flex:1 1 0;min-width:0}
+.acc-panel form{display:contents}
+
+@media (max-width:1180px){
+  .acc-c2{flex-basis:220px}.acc-c4{flex-basis:170px}.acc-c1{flex-basis:160px}
+  .acc-thead,.acc-tr{gap:20px}
+  .acc-details{flex-direction:column}.acc-panel.p2{flex-basis:auto;width:100%}
+  .acc-cards{flex-wrap:wrap}.acc-card{flex-basis:300px}
+}
+@media (max-width:960px){
+  .acc-thead{display:none}
+  .acc-tr{flex-direction:column;align-items:flex-start;gap:12px}
+  .acc-tr>*{flex:none!important}
+  .acc-c5{justify-content:flex-start}
+}
+
+@media (max-width:760px){
+  .acc-hero .wrap{gap:40px;padding-top:24px}
+  .acc-title{display:block}
+  .acc-copy{gap:6px}
+  .acc-copy .pen{font-size:22px;line-height:1.2}
+  .acc-copy h1{font-size:40px;line-height:1.15}
+  .acc-who{display:none}
+  .acc-who-m{display:block}
+  .acc-who-m .acc-dot{padding:0 6px}
+  .acc-live{gap:24px}
+  .acc-live-h{gap:24px}
+  .acc-live-h h2{font-size:26px}
+  .acc-track{flex-direction:column}
+  .acc-stage,.acc-stage:last-child{flex:none;width:100%;flex-direction:row;align-items:stretch;gap:16px;text-align:left}
+  .acc-node-row,.acc-stage:last-child .acc-node-row{flex-direction:column;width:auto;align-items:center}
+  .acc-node{width:28px;height:28px}
+  .acc-stage.now .acc-node::after{width:10px;height:10px}
+  .acc-line,.acc-stage.done .acc-line{flex:1 1 auto;width:2px;height:auto;transform-origin:50% 0}
+  .acc-stage.done .acc-line{width:3px}
+  .acc-stage:last-child .acc-line{display:none}
+  .acc-scopy{display:flex;flex-direction:column;gap:4px;padding:2px 0 24px}
+  .acc-sname{font-size:20px}
+  .acc-links{display:none}
+  .acc-menu{display:block}
+  .acc-body{padding:48px 0 56px}
+  .acc-body .wrap{gap:24px}
+  .acc-lead{font-size:17px;line-height:1.6}
+  .acc-cards{flex-direction:column;gap:16px}
+  .acc-card{flex:none;padding:24px;gap:12px}
+  .acc-card h2{font-size:20px}
+  .acc-row{font-size:14px;line-height:1.55}
+  .acc-tr{gap:32px;padding:24px 0}
+  .acc-tr .acc-piece{font-size:20px}
+  .acc-empty{padding:40px 0}
+  .acc-empty .pen{font-size:22px;line-height:1.2}
+  .acc-empty p:not(.pen){font-size:17px;line-height:1.6}
+  .acc-panel{padding:24px}
+  .acc-panel h2{font-size:26px}
+  .acc-panel h3{font-size:20px}
+  .acc-pair{flex-direction:column}
+}
+@media (min-width:761px){.acc-scopy{display:contents}}
+
+/* entrances: the tracker fills in after the title, lines draw across */
+.acc-line{transform:scaleX(0);transition:transform 1s var(--draw)}
+.acc-node{opacity:0;transform:scale(.6);transition:opacity .5s var(--ease),transform .6s cubic-bezier(.3,1.4,.5,1)}
+.ready .acc-node{opacity:1;transform:none}
+.ready .acc-line{transform:none}
+.acc-stage:nth-child(1) .acc-node{transition-delay:.7s}.acc-stage:nth-child(1) .acc-line{transition-delay:.85s}
+.acc-stage:nth-child(2) .acc-node{transition-delay:1s}.acc-stage:nth-child(2) .acc-line{transition-delay:1.15s}
+.acc-stage:nth-child(3) .acc-node{transition-delay:1.3s}.acc-stage:nth-child(3) .acc-line{transition-delay:1.45s}
+.acc-stage:nth-child(4) .acc-node{transition-delay:1.6s}.acc-stage:nth-child(4) .acc-line{transition-delay:1.45s}
+@media (max-width:760px){.acc-line{transform:scaleY(0)}}
+
+@media (prefers-reduced-motion:reduce){
+}
+[data-acc=overview] .acc-body{border-top:0}
+/* invoices: compact columns below 1500, the mobile row (money stack) below 1320 so the piece never squeezes */
+@media (max-width:1500px){
+  .acc-inv .acc-thead,.acc-inv .acc-tr{gap:20px}
+  .acc-inv .acc-c1{flex-basis:180px}.acc-inv .acc-c3{flex-basis:150px}.acc-inv .acc-m{flex-basis:96px}.acc-inv .acc-disc{flex-basis:170px}
+}
+@media (max-width:1320px){
+  .acc-inv .acc-thead{display:none}
+  .acc-inv .acc-tr{flex-direction:column;align-items:flex-start;gap:12px}
+  .acc-inv .acc-tr>*{flex:none!important}
+  .acc-inv .acc-c5{justify-content:flex-start}
+  .acc-money{display:flex;flex-direction:column;gap:8px;align-self:stretch;max-width:480px}
+  .acc-inv .acc-m{display:flex;justify-content:space-between;gap:16px;flex:none!important}
+  .acc-inv .acc-ml{display:block;color:var(--grey2)!important}
+}
+@media (max-width:760px){.acc-money{max-width:none}}

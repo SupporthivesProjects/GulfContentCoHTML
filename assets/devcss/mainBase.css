@@ -1,0 +1,172 @@
+
+
+/* --------- External Library CSS --------- */
+
+@import url("../../uiframe/css/bootstrap.min.css");
+@import url("../../uiframe/css/animate.min.css");
+@import url("../../uiframe/css/font-awesome.min.css");
+@import url("../../uiframe/css/aos.css");
+
+
+/* --------- External Slider CSS --------- */
+
+@import url("./owl.carousel.min.css");
+@import url("./owl.theme.default.css");
+@import url("./swiper-bundle.min.css");
+@import url("../../uiframe/css/slick.css");
+@import url("../../uiframe/css/slick-theme.css");
+
+/* --------- pages CSS --------- */
+@import url("../site.css"); 
+@import url("../pages/css/404.css");
+@import url("../pages/css/account.css");
+@import url("../pages/css/auth.css");
+@import url("../pages/css/category.css");
+@import url("../pages/css/configure.css");
+@import url("../pages/css/contact.css");
+@import url("../pages/css/home.css");
+@import url("../pages/css/join-us.css");
+@import url("../pages/css/legal.css");
+@import url("../pages/css/order.css");
+@import url("../pages/css/our-story.css");
+@import url("../pages/css/services.css");
+
+/* --------- Developer CSS --------- */
+
+@import url("./dhiraj.css");
+@import url("./tstyle.css");
+@import url("./sakch.css");
+@import url("./sakdam.css");
+@import url("./rstyle.css");
+@import url("./diksha.css");
+@import url("./medhnash.css");
+@import url("./dev-alpha-style.css");
+@import url("./dev-alpha-responsive.css");
+
+/* ------------font family ---------- */
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Satoshi Black';
+  src: url('../fonts/Satoshi-Black.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Satoshi Bold';
+  src: url('../fonts/Satoshi-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Satoshi Light';
+  src: url('../fonts/Satoshi-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Satoshi Medium';
+  src: url('../fonts/Satoshi-Medium.otf') format('opentype');
+}
+
+
+
+
+@media (min-width: 576px){
+  .container, .container-sm {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px){
+  .container, .container-md, .container-sm {
+      max-width: 750px;
+  }
+}
+@media (min-width: 992px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 970px;
+  }
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1099px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 940px;
+  }
+}
+@media screen and (min-device-width: 1100px) and (max-device-width: 1199px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1040px;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1299px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1140px;
+  }
+}
+@media screen and (min-device-width: 1300px) and (max-device-width: 1399px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1240px;
+  }
+}
+@media screen and (min-device-width: 1400px) and (max-device-width: 1499px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+       max-width: 1340px;
+  }
+}
+@media screen and (min-device-width: 1500px) and (max-device-width: 1599px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1700px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1701px) and (max-width: 1800px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 1920px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+     max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1921px) and (max-width: 2880px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1440px;
+  } 
+}
+.bg-image {
+  object-fit: cover;
+}
+.bg-image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg-image:not([class*=absolute]) {
+  position: absolute;
+}
+section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,body{
+  overflow-x:hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0px;
+}
+p{
+  margin-bottom: 0px;
+}
+

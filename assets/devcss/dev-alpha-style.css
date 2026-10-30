@@ -1,0 +1,30 @@
+
+.mmenu.open {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.35s var(--ease);
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+.links a sup {
+    margin-top: 7px;
+}
+
+@media (max-width: 980px) {
+    .links, .login {
+        display: none;
+    }
+}
+@media (min-width:300px) and (max-width: 1180px) {
+  .mmenu.open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.35s var(--ease);
+ }
+}

@@ -1,0 +1,162 @@
+/* our-story.html (Figma desktop / our story 12297:5201, mobile / our story 12174:2832) */
+
+.sty-lab{font-family:var(--pen);font-weight:700;font-size:28px;line-height:1.5;color:var(--red);padding-right:.1em}
+.sty-lead-r{text-align:right}
+
+/* stamps: thumped on when their card or sheet comes in */
+.sty-stamp{position:absolute;z-index:2;display:inline-block;padding:4px 16px;border:2px solid var(--red);border-radius:2px;font:700 28px/1.5 var(--pen);color:var(--red);white-space:nowrap;rotate:var(--sr,6deg);opacity:0;pointer-events:none}
+.in>.sty-stamp,.sty-stamp.in{animation:styStamp .45s cubic-bezier(.2,.9,.3,1.2) var(--sd,.7s) both}
+@keyframes styStamp{0%{opacity:0;scale:2.2}60%{opacity:1;scale:.94}100%{opacity:1;scale:1}}
+
+/* hero: ruled exercise paper with a red margin, the note on how we started */
+.sty-hero{position:relative;margin-top:var(--navh);background:#fff;overflow:hidden}
+.sty-ruled{position:absolute;inset:0;pointer-events:none}
+.sty-ruled::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 36px,var(--rule2) 36px 37px);-webkit-mask-image:linear-gradient(to right,transparent 45%,#000);mask-image:linear-gradient(to right,transparent 45%,#000)}
+.sty-ruled::after{content:"";position:absolute;top:0;bottom:0;left:max(16px,calc((100% - var(--max))/2 - 80px));width:8px;border-left:2px solid rgba(215,38,61,.35);border-right:2px solid rgba(215,38,61,.35)}
+.sty-hero-row{position:relative;display:flex;justify-content:space-between;align-items:center;gap:40px;padding:56px 0}
+.sty-hero-copy{display:flex;flex-direction:column;gap:24px;width:640px;max-width:100%}
+.sty-hero-copy .lead{width:540px;max-width:100%;font-size:20px;line-height:1.55;text-wrap-style:pretty}
+.sty-desk{position:relative;flex:none;width:612px;height:469px;margin-right:0}
+.sty-sheet{position:absolute;left:14px;top:30px;width:600px;height:453px;background:var(--bg);box-shadow:0 1px 2px rgba(27,32,51,.06),0 18px 40px -12px rgba(27,32,51,.1);rotate:3deg}
+.sty-paper{position:absolute;left:6px;top:0;width:600px;display:flex;flex-direction:column;gap:16px;padding:48px 48px 48px 72px;background:var(--bg);border-radius:2px;filter:drop-shadow(0 1px 1px rgba(27,32,51,.06)) drop-shadow(0 18px 20px rgba(27,32,51,.1));rotate:-1.5deg}
+.sty-paper::before{content:"";position:absolute;left:44px;top:0;width:2px;height:443px;background:#ff7a8a}
+.sty-paper .cap{white-space:nowrap}
+.sty-paper-rule{height:1px;background:var(--rule2)}
+.sty-paper>p:not(.cap){font-size:20px;line-height:1.55;color:var(--navy)}
+.sty-paper>p.sty-sign{font:700 28px/1.5 var(--pen);color:var(--red);padding-right:.1em}
+.sty-clip{position:absolute;left:509px;top:-35px;width:24.5px;height:85.5px}
+
+/* three readings */
+.sty-read .sty-lead-r{width:280px}
+.sty-readings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.sty-reading{display:flex;flex-direction:column;gap:16px;padding:32px 32px 40px;background:var(--panel);border-radius:2px}
+.sty-reading .cap{color:var(--ondark)}
+.sty-reading h3{font-family:var(--serif);font-size:32px;line-height:1.25;letter-spacing:-.01em;color:#fff}
+.sty-reading .rule-red{background:var(--red)}
+.sty-reading>p:not(.cap):not(.note){font-size:17px;line-height:1.6;color:var(--ondark)}
+
+/* writers by sector: a contents page in a ring binder */
+.sty-contents{position:relative;width:1200px;max-width:100%;margin:0 auto;padding:72px 96px 80px 160px;background:#fff;filter:drop-shadow(0 16px 24px rgba(27,32,51,.12))}
+.sty-contents::before{content:"";position:absolute;top:0;bottom:0;left:104px;width:8px;border-left:2px solid var(--red);border-right:2px solid var(--red)}
+.sty-hole{position:absolute;left:44px;width:28px;height:28px;border-radius:50%;background:var(--bg);box-shadow:inset 0 2px 4px rgba(27,32,51,.22)}
+.sty-contents-head{display:flex;flex-direction:column;align-items:center;gap:8px;padding-bottom:48px;text-align:center}
+.sty-contents-head .h2{line-height:1.2}
+.sty-contents-head>p:last-child{width:560px;max-width:100%;font-size:17px;line-height:1.6;color:var(--slate)}
+.sty-cols{display:flex;justify-content:space-between;padding-bottom:12px;border-bottom:2px solid var(--navy);font-size:12px;font-weight:500;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--grey2)}
+.sty-entries{list-style:none}
+.sty-entry{display:flex;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line2)}
+.sty-n{flex:none;width:64px;font:700 48px/1.15 var(--pen);color:var(--red);padding-right:.1em}
+.sty-entry>div{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:4px}
+.sty-lead-row{display:flex;gap:12px;align-items:baseline}
+.sty-t{font-family:var(--serif);font-size:32px;line-height:1.25;letter-spacing:-.01em;white-space:nowrap}
+.sty-dots{flex:1 1 0;min-width:24px;height:1.5px;background:radial-gradient(circle,var(--strike2) .75px,transparent .9px) 0 0/8.48px 1.5px repeat-x;align-self:baseline}
+.sty-pg{font-size:14px;line-height:1.55;color:var(--grey2);white-space:nowrap}
+.sty-d{font-size:17px;line-height:1.6;color:var(--slate)}
+
+/* the house style */
+.sty-house .shead .sty-lab,.sty-down .shead .sty-lab{margin-bottom:8px}
+.sty-rules{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:48px 64px 56px 112px;background:#fff;border-radius:2px;filter:drop-shadow(0 12px 20px rgba(27,32,51,.1))}
+.sty-rules::before{content:"";position:absolute;top:0;bottom:0;left:72px;width:8px;border-left:2px solid var(--red);border-right:2px solid var(--red);opacity:.45}
+.sty-approved{right:79px;top:-22px;--sr:6deg;--sd:1.6s}
+.sty-rule{display:flex;flex-direction:column;gap:12px;padding:32px 24px 32px 0}
+.sty-rule h3{font-family:var(--serif);font-size:24px;line-height:1.3}
+.sty-rr{height:2px;background:var(--red)}
+.sty-old{font-size:17px;line-height:1.6;color:var(--strike2)}
+.sty-old .st{color:var(--strike2)}
+.sty-new{font:700 28px/1.5 var(--pen);color:var(--red);padding-right:.15em}
+
+/* what we turn down */
+.sty-briefs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding-top:16px}
+.sty-brief{position:relative;display:flex;flex-direction:column;gap:10px;padding:28px 28px 88px;background:#fff;filter:drop-shadow(0 16px 24px rgba(27,32,51,.12));rotate:var(--r,0deg);transition:rotate .5s var(--ease),opacity .9s var(--ease),transform .9s var(--ease)}
+.sty-brief:hover{rotate:0deg}
+.sty-brief h3{font-family:var(--serif);font-size:24px;line-height:1.3}
+.sty-brief .note{color:var(--slate)}
+.sty-br{height:1px;background:var(--rule2)}
+.sty-brief>p:not(.cap):not(.note){font-size:14px;line-height:1.55;color:var(--slate)}
+.sty-brief .sty-stamp{right:21px;bottom:22px;--sr:8deg}
+
+/* over to you, with the desk things scattered round it */
+.sty-start{overflow:hidden}
+.sty-start-in{position:relative;display:flex;flex-direction:column;align-items:center;gap:32px;text-align:center}
+.sty-start .h2{line-height:1.2}
+.sty-start .lead{width:620px;max-width:100%;font-size:20px;line-height:1.55;text-wrap-style:pretty}
+.sty-start .btns{justify-content:center}
+.sty-sticky,.sty-scrap{position:absolute;text-align:left}
+.sty-sticky{left:-12px;top:16px;width:240px;display:flex;flex-direction:column;gap:6px;padding:28px 24px;background:var(--sticky);filter:drop-shadow(0 16px 24px rgba(27,32,51,.12));rotate:5deg}
+.sty-sticky .note{color:var(--slate);white-space:nowrap}
+.sty-big{font:700 48px/1.15 var(--pen);color:var(--red);white-space:nowrap;padding-right:.1em}
+.sty-tape{position:absolute;left:75px;top:-12px;width:90px;height:26px;background:rgba(255,255,255,.6)}
+.sty-scrap{left:1144px;top:-24px;width:300px;display:flex;flex-direction:column;gap:8px;padding:24px 24px 28px;background:#fff;filter:drop-shadow(0 16px 24px rgba(27,32,51,.12));rotate:-4deg}
+.sty-scrap>p:first-child{font-size:17px;line-height:1.6;color:var(--strike2)}
+.sty-ready{right:-6px;top:407px;--sr:6deg;--sd:.9s}
+.sty-ready.in{animation-delay:.9s}
+.sty-clip2{position:absolute;left:180px;top:380px;width:24.5px;height:85.5px;rotate:-30deg}
+
+@media (max-width:1500px){
+  .sty-desk{transform-origin:100% 50%}
+  .ready .sty-desk{transform:scale(.86)}
+  .sty-desk{margin-left:-86px}
+  .sty-scrap{left:auto;right:-20px}
+  .sty-sticky{left:-40px}
+}
+@media (max-width:1180px){
+  .sty-hero-row{flex-direction:column;align-items:flex-start;gap:24px}
+  .sty-desk{margin:0 0 0 24px}
+  .ready .sty-desk{transform:none}
+  .sty-readings{grid-template-columns:1fr}
+  .sty-rules{grid-template-columns:repeat(2,minmax(0,1fr));padding-right:40px}
+  .sty-briefs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sty-lead-r{text-align:left}
+  .sty-contents{padding:56px 48px 64px 140px}
+  .sty-t{white-space:normal}
+  .sty-sticky,.sty-scrap,.sty-ready,.sty-clip2{display:none}
+}
+@media (max-width:760px){
+  .sty-lab{font-size:22px;line-height:1.2}
+  .sty-ruled::before{display:none}
+  .sty-ruled::after{left:16px}
+  .sty-hero-row{padding:24px 0 40px 24px}
+  .sty-hero-copy .lead{font-size:18px}
+  .sty-desk{display:none}
+
+  .sty-read .shead{gap:16px}
+  .sty-read .sty-lead-r{width:auto}
+  .sty-readings{gap:20px}
+  .sty-reading{padding:32px 24px}
+  .sty-reading h3{font-size:26px}
+
+  .sty-sectors.isec{padding:24px 0}
+  .sty-contents{padding:40px 24px}
+  .sty-contents::before,.sty-hole{display:none}
+  .sty-contents-head{gap:8px;padding-bottom:40px}
+  .sty-contents-head .sty-lab{font-size:28px;line-height:1.5}
+  .sty-contents-head .h2{font-size:40px;line-height:1.15}
+  .sty-entry{gap:14px;align-items:flex-start;padding:18px 0}
+  .sty-n{width:auto;min-width:26px;font-size:28px;line-height:1.5;margin-top:-4px}
+  .sty-t{font-size:20px;line-height:1.3;letter-spacing:0}
+  .sty-dots,.sty-pg{display:none}
+  .sty-d{font-size:14px;line-height:1.55}
+
+  .sty-house .shead,.sty-down .shead{gap:16px}
+  .sty-house .shead .sty-lab{font-size:28px;line-height:1.5}
+  .sty-house .shead .lead{width:235px}
+  .sty-down .shead .lead{width:auto!important}
+  .sty-rules{grid-template-columns:1fr;gap:0;padding:48px 24px 40px 48px}
+  .sty-rules::before{left:24px}
+  .sty-approved{right:8px;top:-20px}
+  .sty-rule h3{font-size:20px}
+
+  .sty-briefs{grid-template-columns:1fr;gap:32px;padding-top:8px}
+  .sty-brief{padding:28px 24px 88px}
+  .sty-brief h3{font-size:24px}
+
+  .sty-start-in{gap:28px}
+  .sty-start .lead{font-size:18px}
+  .sty-start .btns{flex-direction:column;align-self:stretch}
+  .sty-start .btns .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .sty-stamp{opacity:1}
+  .sty-brief{transition:none}
+}
+@media (min-width:1181px){.shead .sty-l396{width:396px}.shead .sty-l492{width:492px}}

@@ -1,0 +1,77 @@
+/* auth family: log-in.html, sign-up.html, forgot-password.html, set-password.html
+   Figma desktop 12223:5815, 12223:5934, 12223:6061, 12223:6174 / mobile 12230:5413, 12230:5502, 12230:5607, 12230:5688.
+   A sheet of ruled paper: punch holes and a red double margin on the left, faded rules on the right. */
+
+.auth-paper{background:var(--bg)}
+.auth-body{position:relative;background:#fff;--auth-m:clamp(64px,12.5vw,240px);--auth-pad:clamp(40px,10.42vw,200px);padding:120px 0 120px calc(var(--auth-m) + var(--auth-pad));min-height:420px}
+
+/* page side: three punch holes and the double margin, full height */
+.auth-side{position:absolute;left:0;top:0;bottom:0;width:calc(var(--auth-m) + 8px);pointer-events:none}
+.auth-holes{position:absolute;left:clamp(20px,5.83vw,112px);top:120px;bottom:120px;display:flex;flex-direction:column;justify-content:space-between}
+.auth-hole{display:block;width:28px;height:28px}
+.auth-margin{position:absolute;left:var(--auth-m);top:0;bottom:0;display:flex;gap:4px}
+.auth-margin i{display:block;width:2px;height:100%;background:var(--red);opacity:.45;transform-origin:50% 0}
+
+/* ruled lines on the right: 1px rules every 48px, fading in from the left */
+.auth-rules{position:absolute;top:0;bottom:0;right:0;left:max(calc(var(--auth-m) + var(--auth-pad) + 680px),calc(100% - 800px));pointer-events:none;
+  background:repeating-linear-gradient(to bottom,transparent 0 47px,var(--rule2) 47px 48px);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 55%);mask-image:linear-gradient(to right,transparent,#000 55%)}
+
+/* the copy column, 640 wide */
+.auth-copy{position:relative;width:640px;max-width:100%}
+.auth-label{display:flex;align-items:flex-end;height:48px;padding-bottom:2px}
+.auth-label .pen{font-size:28px;line-height:1.5;padding-right:.15em}
+.auth-title{display:flex;align-items:flex-end;min-height:96px;padding-bottom:8px}
+.auth-title h1{font-family:var(--serif);font-weight:400;font-size:64px;line-height:1.2;letter-spacing:-.035em;color:var(--navy)}
+.auth-title h1 i{color:var(--red)}
+.auth-lead{display:flex;align-items:flex-end;min-height:48px;padding-bottom:8px;font-size:17px;line-height:1.6;color:var(--slate)}
+.auth-fields{display:flex;flex-direction:column;gap:16px;padding-top:48px}
+.auth-fields .field{background:var(--bg)}
+.auth-fields .consent,.auth-fields .captcha{align-self:flex-start}
+.auth-actions{display:flex;gap:16px;padding-top:48px}
+.auth-actions .btn{flex:1 1 0;min-width:0}
+.auth-link{padding-top:24px}
+.auth-link .tlink{color:var(--navy)}
+.auth-link .tlink:hover{color:var(--red)}
+
+
+/* paper top (mobile): holes in a row, margin lines across */
+.auth-top{display:none}
+
+/* entrances: the margin draws down, holes punch in, rules fade */
+.auth-margin i{transform:scaleY(0);transition:transform 1.4s var(--draw) .2s}
+.auth-margin i+i{transition-delay:.32s}
+.auth-hole{opacity:0;transform:scale(.6);transition:opacity .6s var(--ease),transform .7s cubic-bezier(.3,1.4,.5,1)}
+.auth-hole:nth-child(2){transition-delay:.12s}.auth-hole:nth-child(3){transition-delay:.24s}
+.auth-rules{opacity:0;transition:opacity 1.6s var(--ease) .4s}
+.ready .auth-margin i{transform:none}
+.ready .auth-hole{opacity:1;transform:none}
+.ready .auth-rules{opacity:1}
+
+@media (max-width:1100px){.auth-rules{display:none}}
+
+@media (max-width:760px){
+  .auth-body{padding:40px 24px;min-height:0}
+  .auth-side,.auth-rules{display:none}
+  .auth-top{display:flex;flex-direction:column;gap:32px;margin:0 -24px 32px}
+  .auth-top .auth-holes{position:static;flex-direction:row;justify-content:center;gap:80px}
+  .auth-top .auth-margin{position:static;flex-direction:column;gap:4px}
+  .auth-top .auth-margin i{width:100%;height:2px;transform:scaleX(0);transform-origin:0 50%}
+  .ready .auth-top .auth-margin i{transform:none}
+  .auth-copy{width:100%}
+  .auth-label{height:auto;padding:0 0 8px}
+  .auth-label .pen{font-size:22px;line-height:1.2}
+  .auth-title{min-height:0;padding:0 0 8px}
+  .auth-title h1{font-size:32px;line-height:1.25;letter-spacing:-.01em}
+  .auth-title h1 i{line-height:1.3}
+  .auth-lead{min-height:0;padding:0;font-size:14px;line-height:1.55}
+  .auth-fields{padding-top:32px}
+  .auth-actions{flex-direction:column-reverse;gap:12px;padding-top:32px}
+  .auth-actions .btn{flex:none;width:100%}
+  .auth-link{padding-top:32px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .auth-margin i,.auth-top .auth-margin i,.auth-hole,.auth-rules{transform:none!important;opacity:1;transition:none!important}
+  .auth-margin i{opacity:.45}
+}

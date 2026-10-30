@@ -1,0 +1,25 @@
+/* 404.html (Figma desktop / 404 12161:2226, mobile / 404 12178:4548) */
+.nf-lost{margin-top:var(--navh);background:var(--surface);padding:120px 0 160px}
+.nf-row{display:flex;align-items:center;gap:120px}
+.nf-copy{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.nf-lab{font-family:var(--pen);font-weight:700;font-size:28px;line-height:1.5;color:var(--red);padding-right:.1em}
+.nf-copy .lead{width:520px;max-width:100%;font-size:20px;line-height:1.55}
+.nf-page{flex:none;width:560px;display:flex;flex-direction:column;gap:16px;padding:56px 48px 56px 72px;background:#fff;filter:drop-shadow(0 1px 1px rgba(27,32,51,.06)) drop-shadow(0 18px 20px rgba(27,32,51,.1));rotate:1.5deg;margin-right:5px}
+.nf-rule{height:1px;background:var(--rule2)}
+.nf-big{font-family:var(--serif);font-size:72px;line-height:1.1;letter-spacing:-.035em;color:var(--strike2)}
+.nf-old{font-size:20px;line-height:1.55;color:var(--strike2)}
+.nf-new{font:700 28px/1.5 var(--pen);color:var(--red);padding-right:.15em;align-self:flex-start;transition:color .3s}
+.nf-new:hover{color:var(--navy)}
+@media (max-width:1180px){
+  .nf-row{flex-direction:column-reverse;align-items:stretch;gap:48px}
+  .nf-page{align-self:flex-start;max-width:100%}
+}
+@media (max-width:760px){
+  .nf-lost{padding:48px 0}
+  .nf-row{gap:32px}
+  .nf-lab{font-size:22px;line-height:1.2}
+  .nf-copy .lead{font-size:18px}
+  .nf-page{width:100%;padding:32px 24px;rotate:.8deg;margin:0}
+  .nf-old{font-size:18px}
+  .nf-new{font-size:22px;line-height:1.2}
+}

@@ -1,0 +1,32 @@
+<?php include 'includes/header.php'; ?>
+
+  <section class="acc-hero ink-bg under-nav" aria-labelledby="accT">
+    <div class="wrap">
+      <div class="acc-title">
+        <div class="acc-copy">
+          <p class="pen rv in" style="">good to see you</p>
+          <h1 id="accT" data-lines="" class="done"><span class="wm"><span class="wi" style="--d: 0.1s;">Your</span></span> <i><span class="wm"><span class="wi" style="--d: 0.1s;">account</span></span></i></h1>
+          <p class="acc-who-m rv"><span data-acc-name="">John Smith</span><span class="acc-dot">·</span><span data-acc-email="">test@gmail.com</span><span class="acc-dot">·</span><a class="acc-out" href="index.php" data-signout="">Sign out</a></p>
+        </div>
+        <div class="acc-who rv in" style="">
+          <b data-acc-name="">John Smith</b>
+          <span><span data-acc-email="">test@gmail.com</span><span class="acc-dot">·</span><a class="acc-out" href="index.php" data-signout="">Sign out</a></span>
+        </div>
+      </div>
+      <div>
+        <nav class="acc-links rv in" aria-label="Account" style=""><a href="account.php">Overview</a><a href="account-downloads.php">Downloads</a><a href="account-invoices.php" aria-current="page">Invoices</a><a href="account-details.php">Account details</a></nav>
+        <div class="acc-menu rv">
+          <div class="accmenu"><button class="accmenu-t" type="button" aria-expanded="false"><span><small>In your account</small><b>Invoices</b></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round"></path></svg></button><div class="accmenu-o"><a href="account.php">Overview</a><a href="account-downloads.php">Downloads</a><a href="account-invoices.php" aria-current="page">Invoices</a><a href="account-details.php">Account details</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="acc-body" aria-label="Invoices">
+    <div class="wrap">
+      <p class="acc-lead rv in" style="">Every invoice, ready to download. Totals include any discount applied at checkout.</p>
+      <div class="acc-table acc-inv" id="accInv" role="table" aria-label="Invoices"><div class="acc-thead" role="row"><span class="acc-c1" role="columnheader">Invoice</span><span class="acc-c2" role="columnheader">Piece</span><span class="acc-c3" role="columnheader">Issued</span><span class="acc-m acc-sub" role="columnheader">Subtotal</span><span class="acc-m acc-disc" role="columnheader">Discount</span><span class="acc-m acc-tot" role="columnheader">Total</span><span class="acc-c5" role="columnheader">Invoice</span></div><div class="acc-tr rv in" role="row" style=""><span class="acc-c1" role="cell">GCC-INV-2026-0148</span><span class="acc-c2 acc-piece" role="cell">Article content and three more</span><span class="acc-c3" role="cell">15 October 2026</span><span class="acc-money"><span class="acc-m acc-sub" role="cell"><span class="acc-ml">Subtotal</span><span>$390.60</span></span><span class="acc-m acc-disc" role="cell"><span class="acc-ml">Discount</span><span>GULF10 minus $39.06</span></span><span class="acc-m acc-tot" role="cell"><span class="acc-ml">Total</span><span>$351.54</span></span></span><span class="acc-c5" role="cell"><button type="button" class="btn btn-grey acc-btn" data-invoice="GCC-2026-0148" aria-label="Download invoice GCC-INV-2026-0148"><i class="ink"></i><span class="roll"><span>Download invoice</span><span aria-hidden="true">Download invoice</span></span></button></span></div><div class="acc-tr rv in" role="row" style=""><span class="acc-c1" role="cell">GCC-INV-2026-0131</span><span class="acc-c2 acc-piece" role="cell">Website content</span><span class="acc-c3" role="cell">2 October 2026</span><span class="acc-money"><span class="acc-m acc-sub" role="cell"><span class="acc-ml">Subtotal</span><span>$88.00</span></span><span class="acc-m acc-disc" role="cell"><span class="acc-ml">Discount</span><span>GULF10 minus $8.80</span></span><span class="acc-m acc-tot" role="cell"><span class="acc-ml">Total</span><span>$79.20</span></span></span><span class="acc-c5" role="cell"><button type="button" class="btn btn-grey acc-btn" data-invoice="GCC-2026-0131" aria-label="Download invoice GCC-INV-2026-0131"><i class="ink"></i><span class="roll"><span>Download invoice</span><span aria-hidden="true">Download invoice</span></span></button></span></div><div class="acc-tr rv in" role="row" style=""><span class="acc-c1" role="cell">GCC-INV-2026-0117</span><span class="acc-c2 acc-piece" role="cell">Captions and posts</span><span class="acc-c3" role="cell">18 September 2026</span><span class="acc-money"><span class="acc-m acc-sub" role="cell"><span class="acc-ml">Subtotal</span><span>$132.00</span></span><span class="acc-m acc-disc" role="cell"><span class="acc-ml">Discount</span><span>None</span></span><span class="acc-m acc-tot" role="cell"><span class="acc-ml">Total</span><span>$132.00</span></span></span><span class="acc-c5" role="cell"><button type="button" class="btn btn-grey acc-btn" data-invoice="GCC-2026-0117" aria-label="Download invoice GCC-INV-2026-0117"><i class="ink"></i><span class="roll"><span>Download invoice</span><span aria-hidden="true">Download invoice</span></span></button></span></div><div class="acc-tr rv in" role="row" style=""><span class="acc-c1" role="cell">GCC-INV-2026-0102</span><span class="acc-c2 acc-piece" role="cell">Product descriptions</span><span class="acc-c3" role="cell">3 September 2026</span><span class="acc-money"><span class="acc-m acc-sub" role="cell"><span class="acc-ml">Subtotal</span><span>$78.00</span></span><span class="acc-m acc-disc" role="cell"><span class="acc-ml">Discount</span><span>GULF10 minus $7.80</span></span><span class="acc-m acc-tot" role="cell"><span class="acc-ml">Total</span><span>$70.20</span></span></span><span class="acc-c5" role="cell"><button type="button" class="btn btn-grey acc-btn" data-invoice="GCC-2026-0102" aria-label="Download invoice GCC-INV-2026-0102"><i class="ink"></i><span class="roll"><span>Download invoice</span><span aria-hidden="true">Download invoice</span></span></button></span></div></div>
+    </div>
+  </section>
+
+<?php include 'includes/footer.php'; ?>
