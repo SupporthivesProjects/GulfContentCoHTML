@@ -17,7 +17,7 @@
 
 /* 1 hero: a folder with index tabs, two folders behind, ruled lines, punch holes and a red margin */
 .cat-hero{background:var(--bg);overflow-x:clip}
-.cat-desk{position:relative;margin-top:148px;isolation:isolate}
+.cat-desk{position:relative;margin-top:148px!important;isolation:isolate}
 .cat-fb{position:absolute;width:100%;border-radius:4px;z-index:-1}
 .cat-fb1{left:36px;top:-24px;bottom:24px;background:var(--rule2)}
 .cat-fb2{left:18px;top:-6px;bottom:6px;background:var(--line2)}
@@ -170,7 +170,7 @@
   .cat-head{margin-bottom:24px;gap:24px}
   .cat-head>div,.cat-svcs-t{gap:4px}
 
-  .cat-desk{width:100%;margin-top:0;padding-top:24px}
+  .cat-desk{width: 100% !important;margin-top:0;padding-top:24px}
   .cat-fb{display:none}
   .cat-tabs{position:static;gap:6px;overflow-x:auto;scrollbar-width:none;padding-right:var(--gut)}
   .cat-tabs::-webkit-scrollbar{display:none}
