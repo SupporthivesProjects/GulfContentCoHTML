@@ -77,7 +77,19 @@ ol, ul {
     line-height: 120%;
 }
 
-
+/* --------------erro--------------- */
+.error-page .nf-lab {
+    color: var(--brand-red, #D7263D);
+    font-family: Caveat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.nf-page{
+    width: 560px;
+    max-width: 100%;
+}
 /* -------------footer------------- */
 .foot p{
     color: var(--brand-text-on-dark, #B9BDCB);

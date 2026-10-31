@@ -12,3 +12,128 @@
 
    
 }
+
+@media only screen and (max-width: 600px){
+    .nav {
+        padding: 24px 0 24px;
+    }
+    .logo svg {
+        width: 36px;
+        height: 27px;
+        left: calc(100% - 42px);
+        top: -3px;
+    }
+    .mm-link{
+        color: var(--brand-navy, #1B2033);
+        font-family: "Libre Caslon Text";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: -0.26px;
+    }
+    .mm-pad .mm-cats {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 0 14px 16px;
+        font-size: 17px;
+        line-height: 1.6;
+        color: var(--slate);
+        display: flex;
+        padding: 16px 0 16px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+    .mm-cats a{
+        color: var(--brand-slate, #42475A);
+        font-family: "Schibsted Grotesk";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+    .mm-where{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .leg-hero .ptitle {
+        width: 900px;
+        max-width: 100%;
+        color: var(--brand-navy, #1B2033);
+        text-align: center;
+        font-family: "Libre Caslon Text";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%;
+        letter-spacing: -1.4px;
+    }
+
+    .leg-hero-in {
+        align-items: center;
+        text-align: center;
+        padding: 24px 0 48px;
+    }
+    .leg-hero .wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px 24px 48px;
+    }
+    .leg-body .wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 24px;
+    }
+    .leg-body h2{
+        color: var(--brand-navy, #1B2033);
+        font-family: "Libre Caslon Text";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    .leg-body p{
+        color: var(--brand-slate, #42475A);
+        font-family: "Schibsted Grotesk";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .nf-page .cap{
+        color: var(--brand-grey, #666B7B);
+        font-family: "Schibsted Grotesk";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+    }
+    .nf-page {
+        flex: none;
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .nf-page .hw {
+        color: var(--brand-red, #D7263D);
+        font-family: Caveat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    .error-page .wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 24px;
+    }
+}
