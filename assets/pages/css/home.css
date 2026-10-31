@@ -1,5 +1,49 @@
-/* homepage only (v1.9 rules, moved out of the inline style). Shared rules live in assets/site.css */
+:root{
+  --navy:#1b2033;--red:#d7263d;--red-d:#b81d31;--muted:#555a6b;--faint:#9a9eab;--strike:#a3a7b3;--bg:#fafafa;--paper:#fff;--grey:#dde2e8;--rule:#e7eaf0;--line:rgba(27,32,51,.1);
+  --surface:#eceff4;--slate:#42475a;--grey2:#666b7b;--lred:#ea4a5e;--panel:#232a42;--bdark:#353b52;--ondark:#b9bdcb;--deep:#12162a;--strike2:#8b90a0;
+  --serif:'Libre Caslon Text',Georgia,serif;--sans:'Schibsted Grotesk',system-ui,sans-serif;--pen:'Caveat','Comic Sans MS',cursive;
+  --ease:cubic-bezier(.22,1,.36,1);--gut:clamp(16px,6vw,240px);--max:1440px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--navy);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 2*var(--gut)));margin:0 auto}
+.pen{font-family:var(--pen);font-weight:700;color:var(--red);line-height:1.05}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,4vw,64px);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+.h2 i{color:var(--red)}
+.lab{font-family:var(--pen);font-weight:700;font-size:28px;color:var(--red);display:inline-block;transform:rotate(-2deg);margin-bottom:12px}
+.lead{font-size:clamp(18px,1.1vw,20px);color:var(--slate);max-width:560px;text-wrap:balance}
+.sec{padding:clamp(80px,8vw,104px) 0}
 .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:24px 64px;align-items:end;margin-bottom:56px}
+
+/* strike and handwriting that draw themselves */
+.st{background:linear-gradient(currentColor,currentColor) no-repeat 0 58%/0% 1.5px;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size .7s var(--ease)}
+.st.on{background-size:100% 1.5px}
+.hw{display:inline-block;clip-path:inset(-20% 100% -20% 0);transition:clip-path .9s cubic-bezier(.6,.05,.3,1)}
+.hw.on{clip-path:inset(-20% -2% -20% 0)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:24px 40px;border-radius:2px;transition:transform .45s var(--ease),box-shadow .45s var(--ease),color .3s ease .1s;font-weight:600;font-size:17px;line-height:1;overflow:hidden;isolation:isolate;white-space:nowrap}
+.btn .ink{position:absolute;left:var(--x,50%);top:var(--y,50%);width:var(--d,640px);height:var(--d,640px);border-radius:50%;transform:translate(-50%,-50%) scale(0);transition:transform .6s var(--ease);z-index:-1}
+.btn:hover .ink{transform:translate(-50%,-50%) scale(1)}
+.btn .roll{display:inline-block;height:1.1em;overflow:hidden}
+.btn .roll span{display:block;line-height:1.1;transition:transform .5s var(--ease)}
+.btn:hover .roll span{transform:translateY(-100%)}
+.btn .arw{width:16px;height:12px;position:relative;overflow:hidden;flex:none}
+.btn .arw svg{position:absolute;inset:0;transition:transform .5s var(--ease)}
+.btn .arw svg+svg{transform:translateX(-160%)}
+.btn:hover .arw svg:first-child{transform:translateX(160%)}
+.btn:hover .arw svg+svg{transform:none}
+.btn:active{transition-duration:.12s}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 0 0 var(--navy)}.btn-navy .ink{background:var(--red)}
+.btn-navy:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--navy)}.btn-navy:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--navy)}
+.btn-grey{background:var(--grey);color:var(--navy);font-weight:500;padding:24px 32px;box-shadow:0 0 0 var(--red)}.btn-grey .ink{background:var(--navy)}
+.btn-grey:hover{color:#fff;transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--red)}.btn-grey:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--red)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 0 0 var(--lred)}.btn-red .ink{background:var(--navy)}
+.btn-red:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--lred)}.btn-red:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--lred)}
+
 /* hero */
 .hero{position:relative;height:100vh;height:100svh;min-height:680px;max-height:1200px;overflow:hidden}
 .waffle{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
@@ -60,6 +104,7 @@
 .band{background:var(--surface)}
 .copy .lead{color:var(--muted)}
 /* v1.8 dark band */
+.dark{background:var(--navy);color:#fff}.dark .h2{color:#fff}.dark .h2 i{color:var(--lred)}.dark .lab{color:var(--lred)}.dark .lead{color:var(--ondark)}
 .edit-track{height:260vh}
 .edit-stick{position:sticky;top:0;min-height:100vh;display:flex;align-items:center}
 .edit-grid{display:grid;grid-template-columns:minmax(0,460px) minmax(0,1fr);gap:clamp(40px,6vw,120px);align-items:center}
@@ -120,13 +165,13 @@
 .pull:focus-visible{outline:2px solid var(--red);outline-offset:-4px}
 .readout{display:flex;justify-content:space-between;align-items:flex-end;margin-top:28px;gap:24px;flex-wrap:wrap}
 .lenbox{display:flex;flex-direction:column;gap:8px}
-.pfield{display:flex;flex-direction:column;gap:4px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 16px 12px;width:240px;cursor:text;transition:border-color .3s,box-shadow .3s}
-.pfield:hover{border-color:rgba(27,32,51,.3)}
-.pfield:focus-within{border-color:var(--navy);box-shadow:0 0 0 3px rgba(27,32,51,.08)}
-.pfield .fl{font-size:12px;color:var(--faint);letter-spacing:.04em}
-.pfield .fv{display:flex;align-items:baseline;gap:8px}
-.pfield input{font:600 22px/1.2 var(--sans);color:var(--navy);border:0;background:none;outline:0;width:100%;min-width:0;padding:0}
-.pfield .unit{font-size:15px;color:var(--muted)}
+.field{display:flex;flex-direction:column;gap:4px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 16px 12px;width:240px;cursor:text;transition:border-color .3s,box-shadow .3s}
+.field:hover{border-color:rgba(27,32,51,.3)}
+.field:focus-within{border-color:var(--navy);box-shadow:0 0 0 3px rgba(27,32,51,.08)}
+.field .fl{font-size:12px;color:var(--faint);letter-spacing:.04em}
+.field .fv{display:flex;align-items:baseline;gap:8px}
+.field input{font:600 22px/1.2 var(--sans);color:var(--navy);border:0;background:none;outline:0;width:100%;min-width:0;padding:0}
+.field .unit{font-size:15px;color:var(--muted)}
 .lenbox .rt{font-size:14px;color:var(--muted)}
 .readout .tot{text-align:right}
 .readout .tot small{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
@@ -174,7 +219,7 @@
 .sticky{position:absolute;right:clamp(24px,8vw,180px);top:-52px;z-index:2;background:#ffe9a8;color:var(--navy);padding:20px 22px 24px;width:220px;transform:rotate(4deg);box-shadow:0 18px 30px -18px rgba(0,0,0,.5);font-family:var(--pen);font-weight:700;font-size:24px;line-height:1.15}
 .join .btn-red .ink{background:#fff}.join .btn-red:hover{color:var(--navy)}
 
-/* 2. press release edits itself */
+/* press release edits itself */
 .ba .before p .pr{transition:color .4s}
 .ba .before p .pr .st{color:var(--strike2)}
 .ba .before p{color:var(--navy)}
@@ -187,27 +232,27 @@
 .ba .after{transition:opacity .8s var(--ease),transform .8s var(--ease),box-shadow .8s var(--ease)}
 .ba .after.wait{opacity:.35;transform:translateY(8px)}
 .ba .after.done{box-shadow:0 30px 50px -30px rgba(27,32,51,.3),0 2px 4px rgba(27,32,51,.05)}
-/* 4. heavy paper */
+/* heavy paper */
 .page-wrap{position:relative;perspective:1400px}
 .page{transform-origin:50% 0;will-change:transform}
 .page2{position:absolute;left:0;right:0;top:0;bottom:0;background:var(--bg);border-radius:4px;box-shadow:0 24px 40px -24px rgba(27,32,51,.22),0 1px 3px rgba(27,32,51,.06);transform:translate(0,0) rotate(0);opacity:0;transition:transform .7s cubic-bezier(.3,1.4,.5,1),opacity .4s;background-image:linear-gradient(90deg,transparent 39px,rgba(215,38,61,.22) 39px,rgba(215,38,61,.22) 40.5px,transparent 40.5px)}
 .page-wrap.long .page2{opacity:1;transform:translate(14px,18px) rotate(1.6deg)}
 .page-wrap.vlong .page2.p3{opacity:1;transform:translate(-12px,34px) rotate(-1.8deg)}
 .page-wrap .p3{z-index:-1}
-/* 6. stamps */
+/* stamps */
 .stamp{position:absolute;right:22px;bottom:26px;z-index:3;padding:4px 12px 5px;border:2px solid var(--lred);border-radius:2px;color:var(--lred);font:700 22px/1.15 var(--pen);transform:rotate(var(--sr,-8deg));opacity:0;pointer-events:none;
   -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.6 2.1'/%3E%3C/filter%3E%3Crect width='160' height='60' filter='url(%23n)'/%3E%3C/svg%3E") 0 0/160px 60px;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.6 2.1'/%3E%3C/filter%3E%3Crect width='160' height='60' filter='url(%23n)'/%3E%3C/svg%3E") 0 0/160px 60px}
 .tilt.stamped .stamp{animation:stampIn .42s cubic-bezier(.2,.9,.3,1.2) both}
 .tilt.stamped .card{animation:thud .5s ease-out .12s}
 @keyframes stampIn{0%{opacity:0;transform:rotate(var(--sr,-8deg)) scale(2.2)}60%{opacity:.95;transform:rotate(var(--sr,-8deg)) scale(.94)}100%{opacity:.9;transform:rotate(var(--sr,-8deg)) scale(1)}}
 @keyframes thud{0%,100%{translate:0 0}25%{translate:0 3px}50%{translate:-1px -1px}75%{translate:1px 1px}}
-/* 7. ticks joined by one pen line */
+/* ticks joined by one pen line */
 .list{position:relative}
 .list .trail{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 .list .trail{visibility:hidden} /* v1.7: line removed (Ash); the path only times the ticks */
 .list .trail path{fill:none;stroke:var(--red);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:4 0;opacity:.75}
 .box .tk{transition:stroke-dashoffset .45s cubic-bezier(.6,.05,.3,1)}
-/* 8. sticky note peels */
+/* sticky note peels */
 .sticky{display:block;text-align:left;cursor:pointer;transition:transform .45s var(--ease),box-shadow .45s var(--ease);transform-origin:20% 10%}
 .sticky:hover,.sticky:focus-visible{transform:rotate(2deg) translateY(-4px);box-shadow:0 30px 40px -20px rgba(0,0,0,.55)}
 .sticky:focus-visible{outline:2px solid #fff;outline-offset:4px}
@@ -221,13 +266,13 @@
 .jform.show{opacity:1;transform:rotate(-1deg);pointer-events:auto}
 .join .btn-red{transition:opacity .4s}.join.formed .btn-red{opacity:0;pointer-events:none;visibility:hidden}
 .jform .t{font-family:var(--pen);font-weight:700;font-size:24px;color:var(--red);line-height:1.1}
-.jform .pfield{width:100%}
-.jform .pfield input{font-size:17px;font-weight:500}
+.jform .field{width:100%}
+.jform .field input{font-size:17px;font-weight:500}
 .jform .btn{align-self:flex-start;padding:14px 20px;font-size:15px}
 .jform .ok{font-family:var(--pen);font-weight:700;font-size:22px;color:var(--red);display:none}
 .jform.sent .ok{display:block}.jform.sent form{display:none}
 .jform form{display:flex;flex-direction:column;gap:12px}
-/* 9. the contents page turns over into the pricer */
+/* the contents page turns over into the pricer */
 #svcSec{position:relative}
 .turn{position:absolute;right:0;bottom:0;width:var(--ts,0px);height:var(--ts,0px);pointer-events:none;z-index:2;overflow:visible}
 .turn .under{fill:#fff}
@@ -235,8 +280,16 @@
 .turn .edge{fill:none;stroke:rgba(27,32,51,.12);stroke-width:1;vector-effect:non-scaling-stroke}
 .turn svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;filter:drop-shadow(-10px -8px 18px rgba(27,32,51,.14))}
 
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
 .deskbox{opacity:0;transform:translateY(40px) rotate(2deg);transition:opacity 1.2s var(--ease) .3s,transform 1.4s var(--ease) .3s}
 .ready .deskbox{opacity:1;transform:none}
+.tip{position:fixed;z-index:99;background:var(--navy);color:#fff;font-size:12px;font-weight:600;padding:8px 10px;border-radius:4px;pointer-events:none;opacity:0;transition:opacity .25s;white-space:nowrap}
+.tip::after{content:"";position:absolute;left:50%;margin-left:-5px;border:5px solid transparent}
+.tip.up::after{top:100%;border-top-color:var(--navy)}.tip.dn::after{bottom:100%;border-bottom-color:var(--navy)}
+.tip.show{opacity:1}
+
 @media (max-width:1180px){
   .hero .wrap{grid-template-columns:1fr}
   .deskbox{justify-self:center;margin-top:120px;width:min(760px,100%)}
@@ -247,11 +300,12 @@
   .join{grid-template-columns:1fr}
 }
 @media (max-width:760px){
-  .waffle{display:none}
   .hero .wrap{padding-top:120px}
+  .waffle{display:none}
   .wf .j{font-size:24px}.wf .r{font-size:28px}
   .h1{font-size:46px}
   .copy{gap:28px}
+  .btn{padding:20px 24px}
   .start{left:40px;bottom:-84px}
   .deskbox{margin-top:96px}.desk{aspect-ratio:auto;padding-top:20px}
   .stack{position:relative;left:0;top:0;width:100%}
@@ -276,6 +330,7 @@
   .jform{position:relative;right:auto;top:auto;width:auto;display:none}.jform.show{display:flex}
   .sticky.peel{display:none}
 }
+
 /* v1.8 mobile contents: four sheets in a swipe track */
 .swipe{display:none}
 @media (max-width:760px){
@@ -290,57 +345,11 @@
   .swipe{display:flex;gap:16px;align-items:center;font-size:14px;color:var(--slate);margin-top:8px}
   .sdots{display:flex;gap:8px}.sdots i{display:block;width:8px;height:8px;border-radius:4px;background:#d3d8e1;transition:width .3s var(--ease),background-color .3s}.sdots i.on{width:24px;background:var(--navy)}
 }
-/* v1.2 mobile writer grades per Figma 12334:11531: smaller label, 16px head gaps, cards with the stamp in the bottom padding */
-@media (max-width:760px){
-  .head{row-gap:16px}
-  .head .lab{font-size:22px;line-height:1.2;margin-bottom:16px}
-  .cards{padding-top:24px}
-  .tilt:nth-child(1){--base:1deg!important}.tilt:nth-child(2){--base:-.8deg!important}.tilt:nth-child(3){--base:.6deg!important}
-  .card{padding:32px 24px 56px;gap:8px;box-shadow:0 1px 1.5px rgba(27,32,51,.08),0 24px 20px rgba(27,32,51,.2);
-    background-image:linear-gradient(transparent 92px,rgba(234,74,94,.3) 92px,rgba(234,74,94,.3) 93.5px,transparent 93.5px),repeating-linear-gradient(transparent 0 31px,var(--bdark) 31px 32px);background-position:0 0,0 92px}
-  .card h3{font-size:26px;line-height:1.25;letter-spacing:-.01em;margin:0}
-  .card .rate{top:36px;right:30px;font-size:22px;line-height:1.2}
-  .card p{font-size:14px;line-height:1.55;margin-top:32px}
-  .stamp{--sr:6deg!important;right:24px;bottom:-24px;padding:4px 12px;line-height:1.2}
-  .tilt:nth-child(2) .stamp{bottom:-4px}
-  /* section rhythm per Figma mobile / homepage: 48 top, 56 bottom; hero starts under the nav */
-  .sec{padding:48px 0 56px}
-  .edit-stick{padding:48px 0 56px}
-  .hero .wrap{padding:104px 0 32px}
-  .start{display:none}
-  .deskbox{margin-top:24px}
-  .sec.band:has(.join){padding:24px 0}
-  .join{padding:40px 24px 24px;gap:16px}
-}
 @media (prefers-reduced-motion:reduce){
-  .deskbox{opacity:1!important;transform:none!important}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.deskbox{opacity:1!important;transform:none!important}
   .h1 .ln>span{transform:none!important}
+  .st{background-size:100% 1.5px}.hw{clip-path:none}
   .start svg path,.box .tk{stroke-dashoffset:0!important}
   .stamp{opacity:.9}.turn{display:none}.ba .after.wait{opacity:1;transform:none}
-}/* v1.3 mobile hero paper per Figma mobile / homepage desk 12179:5147: a small fixed prop (paper 305.56 by 274.31),
-   placed under the buttons with 24px between, sheets and clip behind it. Desktop and the 761 to 1180 layout are untouched. */
-@media (max-width:760px){
-  .hero .wrap{padding:80px 0 32px;gap:24px}
-  .deskbox{margin-top:0;justify-self:start;width:327px;max-width:100%}
-  .desk{height:369px;padding:0;aspect-ratio:auto}
-  .stack{position:absolute;left:15.46px;top:50.83px;width:305.56px;height:274.31px}
-  .sheet{border-radius:1.736px;box-shadow:0 .868px 1.736px rgba(27,32,51,.08)}
-  .sheet.s2{translate:-1.8px 2.1px}.sheet.s3{translate:-.7px -3px}
-  .paper{height:274.31px;min-height:0;padding:27.78px 24.3px 0 38.2px;border-radius:1.736px;
-    box-shadow:0 17.362px 17.362px -6px rgba(27,32,51,.12),0 .868px .868px rgba(27,32,51,.06);
-    background-image:linear-gradient(90deg,transparent 32.3px,rgba(215,38,61,.35) 32.3px,rgba(215,38,61,.35) 33.1px,transparent 33.1px),repeating-linear-gradient(transparent 0 21.57px,var(--rule) 21.57px 22.57px);
-    background-position:0 0,0 13.8px}
-  .paper .hole{left:9.55px;width:8px;height:8px}
-  .paper .hole:nth-of-type(1){top:65.1px!important}.paper .hole:nth-of-type(2){top:138px!important}.paper .hole:nth-of-type(3){top:213.5px!important}
-  .curl{width:38.2px;height:38.2px}
-  .clip{left:237.15px;right:auto;top:-18.7px;width:19.97px;height:47.74px;transform:translateZ(3px)}
-  .draft{gap:13.889px;width:243.06px}
-  .dh{font-size:5.642px;letter-spacing:.1em;line-height:1.24}
-  .dh span:last-child{display:none}
-  .edit{gap:1.736px}
-  .edit .o{font-size:8.681px;line-height:1.3}
-  .edit .w{font-size:10.417px;line-height:1.05;padding-right:.15em}
-  .tally{margin-right:0;justify-content:space-between}
-  .tally>span:first-child{display:inline;font-size:6.077px;color:var(--muted)}
-  .tally .pen{font-size:9.983px;line-height:1.2;padding-right:.15em}
 }

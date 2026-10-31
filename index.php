@@ -10,8 +10,8 @@
       <h1 class="h1"><span class="ln"><span>We take the</span></span><span class="ln"><span><i>waffle</i> out.</span></span></h1>
       <p class="lead rv">Blog posts, website copy, scripts and captions from writers who edit as hard as they write. You get copy that says something, in your voice.</p>
       <div class="btns rv">
-        <a href="services.php" class="btn btn-navy"><i class="ink"></i><span class="roll"><span>Order content</span><span aria-hidden="true">Order content</span></span></a>
-        <a href="join-us.php" class="btn btn-grey"><i class="ink"></i><span class="roll"><span>Write with us</span><span aria-hidden="true">Write with us</span></span></a>
+        <a href="#" class="btn btn-navy"><i class="ink"></i><span class="roll"><span>Order content</span><span>Order content</span></span></a>
+        <a href="#" class="btn btn-grey"><i class="ink"></i><span class="roll"><span>Write with us</span><span>Write with us</span></span></a>
       </div>
       <div class="start" aria-hidden="true">
         <svg viewBox="0 0 90 60"><path d="M84 44C62 58 30 52 14 20M14 20l-1 13M14 20l11 5" fill="none" stroke="#d7263d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -67,6 +67,7 @@
   <div class="turn" id="turn" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><defs><linearGradient id="flapG" x1="1" y1="1" x2=".45" y2=".45"><stop offset="0" stop-color="#e3e6ec"/><stop offset=".55" stop-color="#f6f7f9"/><stop offset="1" stop-color="#fafafa"/></linearGradient></defs><path class="under" d="M100 0V100H0Z"/><path class="flap" d="M100 0C86 38 52 70 0 100C34 92 66 82 80 66C94 50 100 26 100 0Z"/><path class="edge" d="M100 0C86 38 52 70 0 100"/></svg></div>
 </section>
 
+<!-- v1.8: pull the page is not in the Figma homepage. Kept hidden; remove the hidden attribute to restore it. -->
 <section class="sec band" id="pullSec" hidden>
   <div class="wrap pricer">
     <div class="ctl rv">
@@ -85,11 +86,11 @@
         </div>
       </div>
       <div class="readout">
-        <div class="lenbox"><label class="pfield" for="lenIn"><span class="fl">Or type a length</span><span class="fv"><input id="lenIn" type="text" inputmode="numeric" autocomplete="off" value="1,200"><span class="unit">words</span></span></label><p class="rt"><span id="rR">5 min</span> to read</p></div>
+        <div class="lenbox"><label class="field" for="lenIn"><span class="fl">Or type a length</span><span class="fv"><input id="lenIn" type="text" inputmode="numeric" autocomplete="off" value="1,200"><span class="unit">words</span></span></label><p class="rt"><span id="rR">5 min</span> to read</p></div>
         <div class="tot"><small>Total</small><span class="pen" id="rP">$120</span></div>
       </div>
       <div style="margin-top:24px;display:flex;flex-direction:column;gap:8px;align-items:flex-start">
-        <button class="btn btn-navy" id="addB"><i class="ink"></i><span class="roll"><span>Add to basket</span><span aria-hidden="true">Add to basket</span></span></button>
+        <button class="btn btn-navy" id="addB"><i class="ink"></i><span class="roll"><span>Add to basket</span><span>Add to basket</span></span></button>
         <p class="added" id="added">In your basket. The brief comes next.</p>
       </div>
     </div>
@@ -126,7 +127,7 @@
       <p class="lead">You write the brief before you pay. Everything after checkout happens in your account: the draft, your changes and the finished files.</p>
     </div>
     <div class="list" id="list"><svg class="trail" aria-hidden="true"><path id="trail"/></svg>
-      <div class="item"><span class="box"><svg viewBox="0 0 40 40"><rect x="3" y="5" width="32" height="31" rx="3" fill="none" stroke="#1b2033" stroke-width="1.5" transform="rotate(-2 19 20)"/><path class="tk" d="M8 21c4 3 6 6 8 10 5-11 12-19 22-27" fill="none" stroke="#d7263d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Pick the piece</h3><p>Choose what you need, then type the exact length you want. The price updates as you go.</p></div>
+      <div class="item"><span class="box"><svg viewBox="0 0 40 40"><rect x="3" y="5" width="32" height="31" rx="3" fill="none" stroke="#1b2033" stroke-width="1.5" transform="rotate(-2 19 20)"/><path class="tk" d="M8 21c4 3 6 6 8 10 5-11 12-19 22-27" fill="none" stroke="#d7263d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Pick the piece</h3><p>Choose what you need, then drag the page or type the exact length you want. The price updates as you go.</p></div>
       <div class="item"><span class="box"><svg viewBox="0 0 40 40"><rect x="3" y="5" width="32" height="31" rx="3" fill="none" stroke="#1b2033" stroke-width="1.5" transform="rotate(1.5 19 20)"/><path class="tk" d="M8 21c4 3 6 6 8 10 5-11 12-19 22-27" fill="none" stroke="#d7263d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Choose the writer</h3><p>Standard, Premium or Expert, then standard or express turnaround. You see the full price before you pay.</p></div>
       <div class="item"><span class="box"><svg viewBox="0 0 40 40"><rect x="3" y="5" width="32" height="31" rx="3" fill="none" stroke="#1b2033" stroke-width="1.5" transform="rotate(-1 19 20)"/><path class="tk" d="M8 21c4 3 6 6 8 10 5-11 12-19 22-27" fill="none" stroke="#d7263d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Send the brief</h3><p>A short form before checkout. Upload what you already have instead of retyping it, and tell us who it is for.</p></div>
       <div class="item"><span class="box"><svg viewBox="0 0 40 40"><rect x="3" y="5" width="32" height="31" rx="3" fill="none" stroke="#1b2033" stroke-width="1.5" transform="rotate(2 19 20)"/><path class="tk" d="M8 21c4 3 6 6 8 10 5-11 12-19 22-27" fill="none" stroke="#d7263d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Read the draft</h3><p>It arrives in your account with two rounds of changes included, then the finished files are yours.</p></div>
@@ -138,11 +139,10 @@
   <div class="wrap">
     <div class="join rv">
       <button class="sticky" id="sticky" aria-controls="jform" aria-expanded="false">Must enjoy deleting their own sentences.<span class="hint">Peel me off</span><span class="ear"></span></button>
-      <div class="jform" id="jform"><span class="t">Good. Send us your best work.</span><form id="jf" novalidate><label class="pfield" for="jEmail"><span class="fl">Your email</span><span class="fv"><input id="jEmail" type="email" autocomplete="email" placeholder="you@example.com"></span></label><label class="pfield" for="jWhat"><span class="fl">What you write best</span><span class="fv"><input id="jWhat" type="text" placeholder="Tech, travel, food"></span></label><button class="btn btn-navy" type="submit"><i class="ink"></i><span class="roll"><span>Send me the test</span><span aria-hidden="true">Send me the test</span></span></button></form><span class="ok">Thanks. The test is on its way.</span></div>
+      <div class="jform" id="jform"><span class="t">Good. Send us your best work.</span><form id="jf" novalidate><label class="field" for="jEmail"><span class="fl">Your email</span><span class="fv"><input id="jEmail" type="email" autocomplete="email" placeholder="you@example.com"></span></label><label class="field" for="jWhat"><span class="fl">What you write best</span><span class="fv"><input id="jWhat" type="text" placeholder="Tech, travel, food"></span></label><button class="btn btn-navy" type="submit"><i class="ink"></i><span class="roll"><span>Send me the test</span><span>Send me the test</span></span></button></form><span class="ok">Thanks. The test is on its way.</span></div>
       <div><span class="lab" style="color:var(--lred)">join us</span><h2 class="h2">Write for <i>Gulf Content Co.</i></h2><p class="lead">We work with specialist writers across the Gulf and beyond. Tell us what you write best and we will send a short paid test.</p></div>
-      <a href="join-us.php" class="btn btn-red"><i class="ink"></i><span class="roll"><span>Apply to write</span><span aria-hidden="true">Apply to write</span></span></a>
+      <a href="#" class="btn btn-red"><i class="ink"></i><span class="roll"><span>Apply to write</span><span>Apply to write</span></span></a>
     </div>
   </div>
 </section>
-
 <?php include 'includes/footer.php'; ?>
