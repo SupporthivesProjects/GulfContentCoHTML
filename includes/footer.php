@@ -62,7 +62,7 @@
         <script src="uiframe/js/aos.js"></script>
         <script src="./uiframe/js/home-js.js"></script>
         <script src="assets/catalogue.js"></script>
-        <script src="assets/site.js"></script>
+        <!-- <script src="assets/site.js"></script> -->
         <script src="assets/pages/js/home.js"></script>
         <!-- <script src="assets/pages/js/payment.js"></script> -->
 

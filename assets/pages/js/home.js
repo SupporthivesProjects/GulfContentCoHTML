@@ -186,11 +186,11 @@ if(!RM&&!$('#pullSec').hidden){addEventListener('scroll',turnAt,{passive:true});
 /* buttons */
 $$('.btn').forEach(b=>b.addEventListener('pointerenter',e=>{const r=b.getBoundingClientRect();b.style.setProperty('--x',e.clientX-r.left+'px');b.style.setProperty('--y',e.clientY-r.top+'px');b.style.setProperty('--d',Math.ceil(2*Math.hypot(r.width,r.height))+'px')}));
 
-/* unbuilt pages */
+/* unbuilt pages 
 const tip=$('#tip');let tt;
 document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;e.preventDefault();e.stopPropagation();const r=a.getBoundingClientRect();tip.classList.add('show');const tw=tip.offsetWidth,th=tip.offsetHeight,up=r.top>th+14;
   tip.className='tip show '+(up?'up':'dn');tip.style.top=(up?r.top-th-10:r.bottom+10)+'px';tip.style.left=Math.min(innerWidth-tw-8,Math.max(8,r.left+r.width/2-tw/2))+'px';clearTimeout(tt);tt=setTimeout(()=>tip.classList.remove('show'),1600)},true);
-addEventListener('scroll',()=>tip.classList.remove('show'),{passive:true});
+addEventListener('scroll',()=>tip.classList.remove('show'),{passive:true});*/
 
 /* the desk scales to fit the viewport so the hero keeps equal space above and below */
 const fitDesk=()=>{const box=$('.deskbox');if(innerWidth<=1180){box.style.removeProperty('--ds');return}

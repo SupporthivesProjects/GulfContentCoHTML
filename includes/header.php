@@ -16,13 +16,23 @@
     <header class="nav" id="nav">
         <div class="wrap">
           <a href="index.php" class="logo" aria-label="Gulf Content Co home">
-            <span>Gulf Content</span>
-            <span class="co">Co.</span>
+              <span>Gulf Content</span>
+              <span class="co">Co.</span>
             <svg viewBox="0 0 65 46" preserveAspectRatio="none" aria-hidden="true">
               <path d="M44 6C30 1 8 6 4 19c-4 14 16 23 33 22 16-1 26-9 24-20-2-9-15-14-28-14" fill="none" stroke="#d7263d" stroke-width="1.6" stroke-linecap="round"></path>
             </svg>
           </a>
-          <nav class="links" aria-label="Main"><a href="services.php">Services<sup>1</sup><svg class="nring" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M8 22 C10 6 88 2 94 18 C99 34 20 40 6 26 C0 18 30 6 60 8"></path></svg></a><a href="join-us.php">Join us<sup>2</sup><svg class="nring" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M8 22 C10 6 88 2 94 18 C99 34 20 40 6 26 C0 18 30 6 60 8"></path></svg></a>
+          <nav class="links nav-link" aria-label="Main">
+            <a href="services.php">Services<sup>1</sup>
+              <svg class="nring" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
+                <path pathLength="1" d="M8 22 C10 6 88 2 94 18 C99 34 20 40 6 26 C0 18 30 6 60 8"></path>
+              </svg>
+            </a>
+            <a href="join-us.php">Join us<sup>2</sup>
+               <svg class="nring" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
+                <path pathLength="1" d="M8 22 C10 6 88 2 94 18 C99 34 20 40 6 26 C0 18 30 6 60 8"></path>
+              </svg>
+            </a>
               <a href="our-story.php">About<sup>3</sup>
                 <svg class="nring" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
                     <path pathLength="1" d="M8 22 C10 6 88 2 94 18 C99 34 20 40 6 26 C0 18 30 6 60 8"></path>

@@ -40,7 +40,7 @@
 
    account and orders (demo session per viewer)
      GCC.account.get(), signedIn(), signIn(details?), signOut(), save(details)
-     GCC.account.require(next?)      signed out: goes to log-in.html?next=... and returns false
+     GCC.account.require(next?)      signed out: goes to log-inphp?next=... and returns false
      GCC.orders.list(), find(ref), create(billing) builds an order from the basket, record(order), nextRef()
      GCC.pay.start(order)            same as window.startPayment(order): the one place a gateway plugs in
 
@@ -325,19 +325,19 @@
 
   /* payment: the one place a gateway plugs in (order shape in README.md).
      Replace the marked lines with: create the session on your server, redirect to the hosted page,
-     return to payment-complete.html?ref=<ref> or payment-failed.html?ref=<ref>. No card details pass through this site. */
+     return to payment-completephp?ref=<ref> or payment-failedphp?ref=<ref>. No card details pass through this site. */
   function startPayment(order) {
     storage.set('pending', order);
     /* gateway: replace from here */
     orders.record(order);
     cart.clear();
-    go('payment-complete.html?ref=' + encodeURIComponent(order.ref));
+    go('payment-completephp?ref=' + encodeURIComponent(order.ref));
     /* to here */
   }
 
   /* navigation carrying state in the hash */
   function go(href) {
-    var u = href.indexOf('#') < 0 && /\.html/.test(href) ? href + '#' + carryHash() : href;
+    var u = href.indexOf('#') < 0 && /\./.test(href) ? href + '#' + carryHash() : href;
     if (!RM && document.documentElement.classList.contains('pf')) { document.documentElement.classList.add('leaving'); setTimeout(function () { location.href = u; }, 250); }
     else location.href = u;
   }
@@ -379,14 +379,14 @@
     return '<a class="skip" href="#main">Skip to content</a>' +
       '<header class="nav' + tone + (account.signedIn() ? ' signed' : '') + '" id="nav">' +
       '<div class="wrap">' +
-      '<a href="index.html" class="logo" aria-label="Gulf Content Co home"><span>Gulf Content</span><span class="co">Co.</span>' + LOGO_SVG + '</a>' +
+      '<a href="indexphp" class="logo" aria-label="Gulf Content Co home"><span>Gulf Content</span><span class="co">Co.</span>' + LOGO_SVG + '</a>' +
       '<nav class="links" aria-label="Main">' + links + '</nav>' +
       '<div class="right">' +
       '<div class="cur-wrap" id="curWrap"><button class="cur" id="curBtn" aria-haspopup="true" aria-expanded="false" aria-label="Currency"><span id="curCode" data-cur-code>' + cur + '</span>' + CHEV + RING + '</button><div class="cur-pop" id="curPop" role="menu">' +
       Object.keys(CUR).map(function (k) { return '<button data-c="' + k + '" role="menuitemradio" aria-pressed="' + (k === cur) + '"><span>' + k + '</span><span>' + CUR[k].symbol.trim() + '</span></button>'; }).join('') +
       '</div></div>' +
-      '<a class="acct-ic" href="account.html" aria-label="Account"' + curAttr('account') + '>' + I_ACC + '</a>' +
-      '<a class="basket" id="basket" href="basket.html"><span class="bk-w">Basket </span>(<span id="bn" data-basket-n>' + cart.count() + '</span>)' + RING + '</a>' +
+      '<a class="acct-ic" href="accountphp" aria-label="Account"' + curAttr('account') + '>' + I_ACC + '</a>' +
+      '<a class="basket" id="basket" href="basketphp"><span class="bk-w">Basket </span>(<span id="bn" data-basket-n>' + cart.count() + '</span>)' + RING + '</a>' +
       '<a href="' + accHref() + '" class="login" data-acc-link' + curAttr(accKey()) + '>' + accText() + RING + '</a>' +
       '<button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu">' + I_MENU + I_X + '</button>' +
       '</div></div></header>' + menuHTML();
@@ -397,14 +397,14 @@
     return '<div class="mmenu" id="mmenu" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true"><div class="mm-pad">' +
       '<span class="mm-hole" style="top:175px"></span><span class="mm-hole" style="top:358px"></span><span class="mm-hole" style="top:541px"></span>' +
       '<p class="mm-where">where to?</p>' +
-      '<a class="mm-link" href="services.html"' + curAttr('services') + '>Services</a>' +
+      '<a class="mm-link" href="servicesphp"' + curAttr('services') + '>Services</a>' +
       '<div class="mm-cats">' + cats + '</div>' +
-      '<a class="mm-link" href="join-us.html"' + curAttr('join-us') + '>Join us</a>' +
-      '<a class="mm-link" href="our-story.html"' + curAttr('about') + '>About</a>' +
-      '<a class="mm-link" href="contact.html"' + curAttr('contact') + '>Contact</a>' +
+      '<a class="mm-link" href="join-usphp"' + curAttr('join-us') + '>Join us</a>' +
+      '<a class="mm-link" href="our-storyphp"' + curAttr('about') + '>About</a>' +
+      '<a class="mm-link" href="contactphp"' + curAttr('contact') + '>Contact</a>' +
       '<div class="mm-space"></div>' +
       '<div class="mm-foot"><div class="mm-row"><a class="mm-acc" href="' + accHref() + '" data-acc-link>' + accText() + '</a><div class="mm-cur" role="group" aria-label="Currency">' + curs + '</div></div>' +
-      '<a class="btn btn-navy btn-block" href="services.html">Order content</a></div>' +
+      '<a class="btn btn-navy btn-block" href="servicesphp">Order content</a></div>' +
       '</div></div>';
   }
   function footerHTML() {
@@ -412,11 +412,11 @@
     return '<footer class="site-foot"><div class="wrap">' +
       '<p class="say" id="say">' + SAY + '</p>' +
       '<div class="foot">' +
-      '<div><a href="index.html" class="logo flogo" aria-label="Gulf Content Co home"><span>Gulf Content</span><span class="co">Co.</span>' + LOGO_SVG + '</a><p>Content writing ordered online,<br>priced by the piece.</p></div>' +
+      '<div><a href="indexphp" class="logo flogo" aria-label="Gulf Content Co home"><span>Gulf Content</span><span class="co">Co.</span>' + LOGO_SVG + '</a><p>Content writing ordered online,<br>priced by the piece.</p></div>' +
       '<div class="cols">' +
       '<div><h4>Services</h4><ul>' + cats + '</ul></div>' +
-      '<div><h4>Explore</h4><ul><li><a href="our-story.html">About</a></li><li><a href="join-us.html">Join us</a></li><li><a href="contact.html">Contact</a></li><li><a href="' + accHref() + '" data-acc-link>' + accText() + '</a></li></ul></div>' +
-      '<div><h4>Legal</h4><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="refunds.html">Refunds</a></li><li><a href="cookies.html">Cookies</a></li></ul></div>' +
+      '<div><h4>Explore</h4><ul><li><a href="our-storyphp">About</a></li><li><a href="join-usphp">Join us</a></li><li><a href="contactphp">Contact</a></li><li><a href="' + accHref() + '" data-acc-link>' + accText() + '</a></li></ul></div>' +
+      '<div><h4>Legal</h4><ul><li><a href="termsphp">Terms</a></li><li><a href="privacyphp">Privacy</a></li><li><a href="refundsphp">Refunds</a></li><li><a href="cookiesphp">Cookies</a></li></ul></div>' +
       '</div></div>' +
       '<div class="base"><span>© 2026 Gulf Content Co.</span><span class="pay">We take ' + PAY + '</span></div>' +
       '</div></footer>';
@@ -675,7 +675,7 @@
   document.addEventListener('click', function (e) {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var a = e.target.closest && e.target.closest('a[href]'); if (!a || (a.target && a.target !== '_self') || a.hasAttribute('download')) return;
-    var href = a.getAttribute('href'); if (!href || /^(https?:|mailto:|tel:|#|javascript:)/i.test(href) || !/\.html(\?|#|$)/.test(href)) return;
+    var href = a.getAttribute('href'); if (!href || /^(https?:|mailto:|tel:|#|javascript:)/i.test(href) || !/\php(\?|#|$)/.test(href)) return;
     e.preventDefault(); go(href);
   });
 
