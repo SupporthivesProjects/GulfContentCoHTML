@@ -15,11 +15,10 @@ QA - Parth/Shailesh<br>
 
 # Task
 
-Vijay : Header, Footer, All modal & Popup.<br>
-Rahul : Terms, Privacy, Error, All modal & Popup.<br>
+Vijay : Header, Footer,Terms, Privacy, Error ,All modal & Popup.<br>
 Dhiraj :  JoinUs, Services, Configure Page, All modal & Popup.<br>
 Tirthak : Individual Services (All 4 Services), All modal & Popup.<br>
-Medhansh :  Login, Register, Forgot, Reset, All modal & Popup.<br>
+Rahul :  Login, Register, Forgot, Reset, All modal & Popup.<br>
 Saakshi C : HomePage, Our Story, All modal & Popup.<br>
 Sakshi K : Dashboard, Your Brief, All modal & Popup.<br>
 Diksha : Contact Us, Cart, Checkout, Checkout Success/Failed, All modal & Popup.<br>
