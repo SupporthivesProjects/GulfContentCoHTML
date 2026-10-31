@@ -170,7 +170,7 @@
   .cat-head{margin-bottom:24px;gap:24px}
   .cat-head>div,.cat-svcs-t{gap:4px}
 
-  .cat-desk{width: 100% !important;margin-top:0;padding-top:24px}
+  .cat-desk{width: 100% !important;margin-top:0!important;padding-top:24px}
   .cat-fb{display:none}
   .cat-tabs{position:static;gap:6px;overflow-x:auto;scrollbar-width:none;padding-right:var(--gut)}
   .cat-tabs::-webkit-scrollbar{display:none}
