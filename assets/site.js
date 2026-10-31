@@ -388,7 +388,7 @@
       '<a class="acct-ic" href="accountphp" aria-label="Account"' + curAttr('account') + '>' + I_ACC + '</a>' +
       '<a class="basket" id="basket" href="basketphp"><span class="bk-w">Basket </span>(<span id="bn" data-basket-n>' + cart.count() + '</span>)' + RING + '</a>' +
       '<a href="' + accHref() + '" class="login" data-acc-link' + curAttr(accKey()) + '>' + accText() + RING + '</a>' +
-      '<button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu">' + I_MENU + I_X + '</button>' +
+      '<button class="menu" id="menuBtnq" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu">' + I_MENU + I_X + '</button>' +
       '</div></div></header>' + menuHTML();
   }
   function menuHTML() {
@@ -463,19 +463,19 @@
     if (!mm) return;
     mm.classList.toggle('open', open); mm.setAttribute('aria-hidden', String(!open));
     nav.classList.toggle('menu-on', open); document.body.classList.toggle('menu-open', open);
-    var mb = $('#menuBtn'); mb.setAttribute('aria-expanded', String(open)); mb.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    var mb = $('#menuBtnq'); mb.setAttribute('aria-expanded', String(open)); mb.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     if (open) {
       lastFocus = document.activeElement;
       $$('.mm-pad > *:not(.mm-hole)', mm).forEach(function (el, i) { el.style.transitionDelay = RM ? '0s' : (0.05 + i * 0.04) + 's'; });
     } else if (lastFocus) lastFocus.focus({ preventScroll: true });
   }
   document.addEventListener('click', function (e) {
-    if (e.target.closest && e.target.closest('#menuBtn')) { setMenu(!mm.classList.contains('open')); return; }
+    if (e.target.closest && e.target.closest('#menuBtnq')) { setMenu(!mm.classList.contains('open')); return; }
     if (mm && mm.classList.contains('open') && e.target.closest && e.target.closest('.mmenu a')) setMenu(false);
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && mm && mm.classList.contains('open')) setMenu(false);
-    if (e.key === 'Tab' && mm && mm.classList.contains('open')) trap(e, [$('#menuBtn')].concat($$('a,button', mm)));
+    if (e.key === 'Tab' && mm && mm.classList.contains('open')) trap(e, [$('#menuBtnq')].concat($$('a,button', mm)));
   });
   addEventListener('resize', function () { if (innerWidth > 1180 && mm && mm.classList.contains('open')) setMenu(false); });
 
