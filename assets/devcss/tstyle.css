@@ -60,7 +60,10 @@ height: 83px;
 }
 
 @media only screen and (min-width: 1280px) and (max-width:1348px) {
-    .cat-about-copy{width:auto;max-width:290px}
+    .cat-about-copy{width:auto;max-width:373px}
+        .cat-sheet {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
