@@ -140,10 +140,9 @@
 }
 @media (max-width:1380px){
   .cat-about-row{flex-direction:column;gap:48px}
-  .cat-about-copy{width:auto;max-width:640px}
-  /* notes move into the sheet, under the paragraph they mark */
-  .cat-mk{position:relative;left:auto;top:auto;width:auto;transform:none;display:flex;gap:8px;align-items:center;margin-top:14px}
-  .cat-mk::before{position:static;flex:none;width:20px}
+  .cat-about-copy{width:auto;max-width:350px}
+  /* .cat-mk{position:relative;left:auto;top:auto;width:auto;transform:none;display:flex;gap:8px;align-items:center;margin-top:14px} */
+  /* .cat-mk::before{position:static;flex:none;width:20px} */
   .cat-sheet{max-width:100%}
 }
 @media (max-width:1180px){
