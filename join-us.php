@@ -30,7 +30,7 @@
     </div>
   </section>
 
-  <section class="isec dark" aria-labelledby="testT">
+  <section class="isec dark dark_how" aria-labelledby="testT">
     <div class="wrap">
       <div class="shead">
         <h2 class="h2 rv" id="testT">How the test <i>works</i></h2>
