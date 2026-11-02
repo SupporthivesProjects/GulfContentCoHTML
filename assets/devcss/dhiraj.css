@@ -1,0 +1,426 @@
+.join-hero-row .join-ad{
+    transform: rotate(2deg);
+
+} 
+
+.join-form  .field{
+    width: 100%;
+    border-radius: 2px;
+border: 1px solid var(--brand-mist, #DDE2E8);
+background: var(--Base-White, #FFF);
+}
+
+.join-form .field input::placeholder{
+    color: var(--brand-navy, #1B2033);
+font-family: "Schibsted Grotesk";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 27.2px */
+}
+
+.join-form .field:hover {
+    border-color: rgba(27, 32, 51, .3);
+}
+
+ .join-form .field:focus-within {
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(27, 32, 51, .08);
+}
+
+.join-form  .field
+ .fl{
+    color: var(--brand-red, #D7263D);
+font-family: "Schibsted Grotesk";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 16.8px */
+letter-spacing: 0.96px;
+text-transform: uppercase;
+ }
+
+ .join-form .btn-red:hover{
+    color: var(--Base-White, #FFF);
+ }
+
+
+ /* CONFIGURE */
+
+ 
+/* Quantity trigger wrapper */
+.qty-dropdown {
+    position: relative;
+    display: inline-flex;
+    flex: 0 0 auto;
+    vertical-align: middle;
+}
+
+/* Desktop dropdown */
+.qty-dropdown-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 10001;
+    display: none;
+    width: 224px;
+    padding: 8px 0;
+background: var(--Base-White, #FFF);
+box-shadow: 0 16px 40px -8px rgba(27, 32, 51, 0.14);
+    border: 1px solid #e7e9ee;
+    box-shadow: 0 8px 24px rgb(27 32 51 / 10%);
+}
+
+.qty-dropdown-panel.qty-dropdown-open {
+    display: block;
+}
+
+.qty-dropdown-overlay {
+    display: none;
+}
+
+.qty-dropdown-handle,
+.qty-dropdown-title {
+    display: none;
+}
+
+.qty-dropdown-list {
+    display: block;
+    max-height: 265px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+}
+
+.qty-dropdown-option {
+display: flex;
+padding: 14px 20px;
+align-items: center;
+gap: 12px;
+align-self: stretch;
+width: 100%;
+    border: 0;
+    background: #fff;
+  color: var(--brand-slate, #42475A);
+font-family: "Schibsted Grotesk";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 27.2px */
+    text-align: left;
+    cursor: pointer;
+}
+
+.qty-dropdown-option.qty-dropdown-selected {
+    color: #1B2033;
+    font-weight: 600;
+
+}
+
+.qty-dropdown-check {
+    display: flex;
+    visibility: hidden;
+}
+
+.qty-dropdown-check svg {
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
+.qty-dropdown-check path {
+    fill: none;
+    stroke: #d7263d;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.qty-dropdown-selected .qty-dropdown-check {
+    visibility: visible;
+}
+
+.qty-dropdown-option:focus-visible {
+    outline: 2px solid #d7263d;
+    outline-offset: -2px;
+}
+
+/* Hide quantity dropdown scrollbar but keep scrolling */
+.qty-dropdown-list {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.qty-dropdown-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.qty-dropdown {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.qty-dropdown-overlay,
+.qty-dropdown-panel {
+    display: none;
+}
+
+body > .qty-dropdown-panel.qty-dropdown-open {
+        position: fixed !important;
+        top: var(--qty-dropdown-top, 0px) !important;
+        left: var(--qty-dropdown-left, 0px) !important;
+        right: auto !important;
+        bottom: auto !important;
+
+        width: 360px !important;
+        max-width: calc(100vw - 32px) !important;
+        height: auto !important;
+        max-height: 300px !important;
+
+        display: flex !important;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 8px 0 !important;
+
+        border: 1px solid var(--brand-rule, #D3D8E1);
+        border-radius: 2px;
+        background: #fff;
+        box-shadow: 0 16px 40px -8px rgba(27, 32, 51, 0.14);
+
+        overflow: hidden;
+        transform: none !important;
+        z-index: 99999 !important;
+    }
+
+    body > .qty-dropdown-overlay.qty-dropdown-open {
+        display: none !important;
+    }
+
+    body > .qty-dropdown-panel.qty-dropdown-open
+    .qty-dropdown-handle,
+    body > .qty-dropdown-panel.qty-dropdown-open
+    .qty-dropdown-title {
+        display: none;
+    }
+
+    body > .qty-dropdown-panel.qty-dropdown-open
+    .qty-dropdown-list {
+        display: block;
+        flex: 0 1 auto;
+        min-height: 0;
+        max-height: 284px !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+
+    body > .qty-dropdown-panel.qty-dropdown-open
+    .qty-dropdown-list::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    .qty-dropdown-panel,
+    .qty-dropdown-overlay {
+        transition: none;
+    }
+}
+
+/* GRADE */
+
+
+
+/* =========================================
+   GRADE DROPDOWN — DESKTOP
+========================================= */
+
+.grade-dropdown {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.grade-dropdown-overlay,
+.grade-dropdown-panel {
+    display: none;
+}
+
+/* Desktop dropdown panel */
+body > .grade-dropdown-panel.grade-dropdown-open {
+    position: fixed !important;
+
+    top: var(--grade-menu-top, 0px) !important;
+    left: var(--grade-menu-left, 0px) !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 360px !important;
+    max-width: calc(100vw - 24px) !important;
+    height: auto !important;
+    max-height: 320px !important;
+
+    margin: 0 !important;
+    padding: 8px 0 !important;
+
+    box-sizing: border-box;
+    border: 1px solid var(--brand-rule, #D3D8E1) !important;
+    border-radius: 2px !important;
+    background: var(--Base-White, #FFF) !important;
+    box-shadow: 0 16px 40px -8px rgba(27, 32, 51, 0.14) !important;
+
+    overflow: hidden;
+    transform: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+
+    z-index: 99999 !important;
+}
+
+/* Desktop: hide mobile heading and handle */
+.grade-dropdown-handle,
+.grade-dropdown-title {
+    display: none;
+}
+
+/* Options list */
+.grade-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.grade-dropdown-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop option rows */
+.grade-dropdown-option {
+display: flex;
+padding: 14px 20px;
+align-items: center;
+gap: 12px;
+align-self: stretch;
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 38px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+color: var(--brand-slate, #42475A);
+font-family: "Schibsted Grotesk";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 27.2px */
+    text-align: left;
+
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+
+.grade-dropdown-option:hover {
+background: var(--brand-surface, #ECEFF4);}
+
+.grade-dropdown-option:last-child {
+    border-bottom: 0;
+}
+
+/* Checkmark */
+.grade-dropdown-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
+
+    visibility: hidden;
+}
+
+.grade-dropdown-check svg {
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
+.grade-dropdown-check path {
+    fill: none;
+    stroke: #D7263D;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.grade-dropdown-selected .grade-dropdown-check {
+    visibility: visible;
+}
+
+.grade-dropdown-name {
+    flex: 1 1 auto;
+    min-width: 0;
+color: var(--brand-slate, #42475A);
+font-family: "Schibsted Grotesk";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 27.2px */}
+
+.grade-dropdown-selected .grade-dropdown-name {
+    color: #1B2033;
+    font-weight: 600;
+}
+
+.grade-dropdown-price {
+    flex: 0 0 auto;
+    margin-left: auto;
+color: var(--brand-grey, #666B7B);
+font-family: "Schibsted Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 155%; /* 21.7px */
+    white-space: nowrap;
+}
+
+/* Desktop overlay is not needed */
+body > .grade-dropdown-overlay.grade-dropdown-open {
+    display: none !important;
+}
+
+/* IMAGE DROP DOWN */
+
+.image-dropdown-price{
+       flex: 0 0 auto;
+    margin-left: auto;
+color: var(--brand-grey, #666B7B) !important;
+font-family: "Schibsted Grotesk" !important;
+font-size: 14px !important;
+font-style: normal;
+font-weight: 400 !important;
+line-height: 155%; /* 21.7px */
+    white-space: nowrap;
+}
+
+
+
+.cfg-tn{
+    border-top: 1px solid var(--brand-rule, #D3D8E1);
+}
