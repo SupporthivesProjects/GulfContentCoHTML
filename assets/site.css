@@ -1938,7 +1938,7 @@ body.menu-open {
         --navh: 80px;
     }
     .nav {
-        padding: 24px 0;
+        padding: 24px 0px !important;
     }
     .nav.solid {
         padding: 12px 0;
