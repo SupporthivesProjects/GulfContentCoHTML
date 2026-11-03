@@ -61,129 +61,129 @@
     <div class="contents rv">
       <span class="pen margin-note">priced by the piece</span>
       <div class="cats" id="cats">
-    <div class="cat">
-        <h3>Corporate content</h3>
-        <div class="svc" style="--bw: 156px;"><b>Article content</b><span class="dots"></span><small>from $44 per 500 words</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 144px;"><b>Press releases</b><span class="dots"></span><small>from $44 a release</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 177px;"><b>CVs and resumes</b><span class="dots"></span><small>from $44 a document</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 134px;"><b>Cover letters</b><span class="dots"></span><small>from $44 a letter</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 170px;"><b>Website policies</b><span class="dots"></span><small>from $26 a policy</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 156px;"><b>Review writing</b><span class="dots"></span><small>from $18 a review</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="cat">
-        <h3>Creative writing</h3>
-        <div class="svc" style="--bw: 125px;"><b>Blog writing</b><span class="dots"></span><small>from $39 per 500 words</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 157px;"><b>E-book writing</b><span class="dots"></span><small>from $66 a chapter</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 141px;"><b>Script writing</b><span class="dots"></span><small>from $53 a piece</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 140px;"><b>White papers</b><span class="dots"></span><small>from $20 per 500 words</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 136px;"><b>Ghostwriting</b><span class="dots"></span><small>from $18 per 500 words</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 131px;"><b>Tech writing</b><span class="dots"></span><small>from $39 a document</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="cat">
-        <h3>Advertising</h3>
-        <div class="svc" style="--bw: 192px;"><b>Marketing content</b><span class="dots"></span><small>from $26 per 500 words</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 170px;"><b>Website content</b><span class="dots"></span><small>from $44 a page</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 192px;"><b>Tagline and slogan</b><span class="dots"></span><small>from $55 a route</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 216px;"><b>Product descriptions</b><span class="dots"></span><small>from $26 a product</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="cat">
-        <h3>Social media</h3>
-        <div class="svc" style="--bw: 197px;"><b>Captions and posts</b><span class="dots"></span><small>from $44 a post</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 190px;"><b>Content calendars</b><span class="dots"></span><small>from $20 a month</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 162px;"><b>Campaign copy</b><span class="dots"></span><small>from $26 a campaign</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 86px;"><b>Ad copy</b><span class="dots"></span><small>from $26 a batch</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 129px;"><b>Story scripts</b><span class="dots"></span><small>from $69 a script</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-        <div class="svc" style="--bw: 210px;"><b>Profile and bio copy</b><span class="dots"></span><small>from $69 a profile</small>
-            <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
-                <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
-            </svg>
-        </div>
-    </div>
-</div>
+          <div class="cat">
+              <h3>Corporate content</h3>
+              <div class="svc" style="--bw: 156px;"><b>Article content</b><span class="dots"></span><small>from $44 per 500 words</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 144px;"><b>Press releases</b><span class="dots"></span><small>from $44 a release</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 177px;"><b>CVs and resumes</b><span class="dots"></span><small>from $44 a document</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 134px;"><b>Cover letters</b><span class="dots"></span><small>from $44 a letter</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 170px;"><b>Website policies</b><span class="dots"></span><small>from $26 a policy</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 156px;"><b>Review writing</b><span class="dots"></span><small>from $18 a review</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+          </div>
+          <div class="cat">
+              <h3>Creative writing</h3>
+              <div class="svc" style="--bw: 125px;"><b>Blog writing</b><span class="dots"></span><small>from $39 per 500 words</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 157px;"><b>E-book writing</b><span class="dots"></span><small>from $66 a chapter</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 141px;"><b>Script writing</b><span class="dots"></span><small>from $53 a piece</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 140px;"><b>White papers</b><span class="dots"></span><small>from $20 per 500 words</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 136px;"><b>Ghostwriting</b><span class="dots"></span><small>from $18 per 500 words</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 131px;"><b>Tech writing</b><span class="dots"></span><small>from $39 a document</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+          </div>
+          <div class="cat">
+              <h3>Advertising</h3>
+              <div class="svc" style="--bw: 192px;"><b>Marketing content</b><span class="dots"></span><small>from $26 per 500 words</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 170px;"><b>Website content</b><span class="dots"></span><small>from $44 a page</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 192px;"><b>Tagline and slogan</b><span class="dots"></span><small>from $55 a route</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 216px;"><b>Product descriptions</b><span class="dots"></span><small>from $26 a product</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+          </div>
+          <div class="cat">
+              <h3>Social media</h3>
+              <div class="svc" style="--bw: 197px;"><b>Captions and posts</b><span class="dots"></span><small>from $44 a post</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 190px;"><b>Content calendars</b><span class="dots"></span><small>from $20 a month</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 162px;"><b>Campaign copy</b><span class="dots"></span><small>from $26 a campaign</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 86px;"><b>Ad copy</b><span class="dots"></span><small>from $26 a batch</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 129px;"><b>Story scripts</b><span class="dots"></span><small>from $69 a script</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+              <div class="svc" style="--bw: 210px;"><b>Profile and bio copy</b><span class="dots"></span><small>from $69 a profile</small>
+                  <svg class="ring" preserveAspectRatio="none" viewBox="0 0 200 50">
+                      <path pathLength="1" d="M150 6C100 0 20 4 8 20c-10 16 30 26 90 25s100-8 98-24C194 6 150 3 110 5" fill="none" stroke="#d7263d" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
+                  </svg>
+              </div>
+          </div>
+      </div>
       <div class="swipe" id="swipe" aria-hidden="true"><span class="sdots"><i class="on"></i><i></i><i></i><i></i></span><span>Swipe for all four categories</span></div>
     </div>
   </div>
