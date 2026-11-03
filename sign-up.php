@@ -8,10 +8,13 @@
   font-weight: 400;
   line-height: 160%;
 }
+<<<<<<< HEAD
 section{
   max-width: 1920px;
   margin: auto;
 }
+=======
+>>>>>>> eb7f1f3 (rahul)
 </style>
  <section class="auth-paper under-nav" aria-labelledby="authT">
     <div class="auth-body">
