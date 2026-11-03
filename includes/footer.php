@@ -14,7 +14,13 @@
                         </svg>
                     </p>
                     <div class="foot">
-                        <div><a href="index.php" class="logo flogo" aria-label="Gulf Content Co home"><span>Gulf Content</span><span class="co">Co.</span><svg viewBox="0 0 65 46" preserveAspectRatio="none" aria-hidden="true"><path d="M44 6C30 1 8 6 4 19c-4 14 16 23 33 22 16-1 26-9 24-20-2-9-15-14-28-14" fill="none" stroke="#d7263d" stroke-width="1.6" stroke-linecap="round"></path></svg></a>
+                        <div>
+                            <a href="index.php" class="logo flogo" aria-label="Gulf Content Co home">
+                                <span>Gulf Content</span><span class="co">Co.</span>
+                                <svg width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.42208 16.9742C2.59117 14.581 3.59595 12.4212 5.22476 10.5152M5.22476 10.5152C7.86087 7.43038 12.1315 5.01009 17.1394 3.34012M5.22476 10.5152C1.44159 14.1318 -0.321753 18.1682 1.12208 21.5742C10.2221 37.6742 61.5721 30.7742 58.3221 12.3742C56.5817 4.16292 45.5209 0.532144 33.6896 0.664217M5.22476 10.5152C8.16321 7.70613 12.3202 5.15039 17.1394 3.34012M17.1394 3.34012C22.2107 1.64898 28.0381 0.727305 33.6896 0.664217M17.1394 3.34012C22.1489 1.45833 27.874 0.382086 33.6896 0.664217M33.6896 0.664217C34.5325 0.705107 35.3773 0.774532 36.2221 0.874174" stroke-width="1.23935" stroke-linecap="round" stroke="#D7263D"/>
+                                </svg>
+                                </a>
                             <p>Content writing ordered online,
                                 <br>priced by the piece.</p>
                         </div>
@@ -97,6 +103,23 @@
                 content.classList.remove("header-scroll", "solid")
             }
         });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const footer = document.querySelector(".site-foot");
+                const footerSay = document.querySelector("#say");
+                if (!footer) return;
+                const observer = new IntersectionObserver((entries) => {
+                    const entry = entries[0];
+                    footerSay.classList.toggle(
+                        "on",
+                        entry.isIntersecting
+                    );
+                }, {
+                    threshold: 0.1
+                });
+                observer.observe(footer);
+            });
         </script>
         <script>
         AOS.init();

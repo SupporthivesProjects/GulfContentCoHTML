@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-<section class="nf-lost" aria-labelledby="nfTitle">
+<section class="nf-lost error-page" aria-labelledby="nfTitle">
     <div class="wrap nf-row">
       <div class="nf-copy">
         <p class="nf-lab rv">we cut this one</p>

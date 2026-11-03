@@ -77,8 +77,36 @@ ol, ul {
     line-height: 120%;
 }
 
-
+/* --------------erro--------------- */
+.error-page .nf-lab {
+    color: var(--brand-red, #D7263D);
+    font-family: Caveat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.nf-page{
+    width: 560px;
+    max-width: 100%;
+}
 /* -------------footer------------- */
+.foot .logo{
+    font-family: "Libre Caslon Text";
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.26px;
+}
+.logo svg {
+    position: absolute;
+    left: calc(100% - 61px);
+    top: -8px;
+    width: 65px;
+    height: 46px;
+    overflow: visible;
+}
 .foot p{
     color: var(--brand-text-on-dark, #B9BDCB);
     font-family: "Schibsted Grotesk";
