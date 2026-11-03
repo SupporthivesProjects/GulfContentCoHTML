@@ -1,5 +1,16 @@
 <?php include 'includes/header.php'; ?>
 
+<style>
+.field input{
+  color: var(--brand-navy, #1B2033);
+  font-family: "Schibsted Grotesk";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+</style>
+
 <main id="main">
 
 <section class="auth-paper under-nav" aria-labelledby="authT">

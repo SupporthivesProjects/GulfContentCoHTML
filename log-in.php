@@ -1,4 +1,14 @@
   <?php include 'includes/header.php'; ?>
+<style>
+.field input{
+  color: var(--brand-navy, #1B2033);
+  font-family: "Schibsted Grotesk";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+</style>
   <section class="auth-paper under-nav" aria-labelledby="authT">
     <div class="auth-body">
       <div class="auth-side" aria-hidden="true"><div class="auth-holes"><img class="auth-hole" src="assets/img/auth-punch-hole.svg" width="28" height="28" alt="" decoding="async"><img class="auth-hole" src="assets/img/auth-punch-hole.svg" width="28" height="28" alt="" decoding="async"><img class="auth-hole" src="assets/img/auth-punch-hole.svg" width="28" height="28" alt="" decoding="async"></div><div class="auth-margin"><i></i><i></i></div></div>
