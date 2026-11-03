@@ -1,0 +1,38 @@
+@media only screen and (max-width: 700px){
+.sty-hero{
+    padding: 0px !important;
+}
+.isec {
+        padding: 48px 0 24px;
+    }
+    .sty-house{
+        padding: 48px 0 56px !important;
+    }
+    .sty-down{
+        padding: 48px 0 40px;
+    }
+    .home-last-sec{
+        padding: 24px 0px;
+    }
+    .home-last-sec .join{
+        padding:40px 24px;
+        gap: 16px;
+    }
+    .home-how-it-works{
+        padding: 48px 0px 56px 0px;
+    }
+    .home-how-it-works .edit-stick,.home-how-it-works .edit-track{
+        padding: 0px;
+    }
+    .hero-mob{
+        padding: 0px !important;
+        display: flex !important;
+    flex-direction: column-reverse !important;
+    }
+    .hero-deskbox {
+        margin-top: 46.88px;
+        width: 305px;
+        margin-bottom: 39.87px;
+        transform: rotate(2.4deg);
+    }
+}
