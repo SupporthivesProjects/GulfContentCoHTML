@@ -60,6 +60,7 @@
     </div>
     <div class="contents rv">
       <span class="pen margin-note">priced by the piece</span>
+<<<<<<< HEAD
       <div class="cats" id="cats">
           <div class="cat">
               <h3>Corporate content</h3>
@@ -184,6 +185,9 @@
               </div>
           </div>
       </div>
+=======
+      <div class="cats" id="cats"></div>
+>>>>>>> rahul
       <div class="swipe" id="swipe" aria-hidden="true"><span class="sdots"><i class="on"></i><i></i><i></i><i></i></span><span>Swipe for all four categories</span></div>
     </div>
   </div>
