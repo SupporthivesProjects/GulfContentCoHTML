@@ -8,6 +8,10 @@
   font-weight: 400;
   line-height: 160%;
 }
+section{
+  max-width: 1920px;
+  margin: auto;
+}
 </style>
   <section class="auth-paper under-nav" aria-labelledby="authT">
     <div class="auth-body">
