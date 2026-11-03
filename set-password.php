@@ -10,12 +10,18 @@
   line-height: 160%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b0bb03 (rahul)
 section{
   max-width: 1920px;
   margin: auto;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> eb7f1f3 (rahul)
+=======
+>>>>>>> 2b0bb03 (rahul)
 </style>
 <section class="auth-paper under-nav" aria-labelledby="authT">
     <div class="auth-body">
