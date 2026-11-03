@@ -22,7 +22,7 @@
       </div>
     </div>
   </section>
-  <section class="isec dark sty-read" aria-labelledby="readT">
+  <section class="isec dark sty-read isecc" aria-labelledby="readT">
     <div class="wrap">
       <div class="shead">
         <h2 class="h2 rv in" id="readT" style="">Every piece is read<br><i>before it reaches you</i></h2>
@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <section class="isec band sty-sectors" aria-labelledby="secT">
+  <section class="isec band sty-sectors isecc" aria-labelledby="secT">
     <div class="wrap">
       <div class="sty-contents rv in" style="">
         <span class="sty-hole" style="top:289px" aria-hidden="true"></span><span class="sty-hole" style="top:592px" aria-hidden="true"></span><span class="sty-hole" style="top:895px" aria-hidden="true"></span>
@@ -91,7 +91,7 @@
     </div>
   </section>
 
-  <section class="isec sty-start" aria-labelledby="startT">
+  <section class="isec sty-start isecc" aria-labelledby="startT">
     <div class="wrap sty-start-in">
       <div class="sty-sticky rv in" aria-hidden="true" style=""><span class="sty-tape"></span><p class="note">first draft back in</p><p class="sty-big">5 to 7 days</p></div>
       <div class="sty-scrap rv in" aria-hidden="true" style=""><p>In today’s fast paced world,</p><p class="sty-new">Ports close at six.</p></div>
