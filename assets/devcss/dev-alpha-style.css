@@ -90,6 +90,9 @@ ol, ul {
     width: 560px;
     max-width: 100%;
 }
+.edit-track {
+    height: 260vh;
+}
 /* -------------footer------------- */
 .foot .logo{
     font-family: "Libre Caslon Text";
