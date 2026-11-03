@@ -1,0 +1,230 @@
+.mobile_none_sk {
+    display: none;
+}
+
+.desk_none_sk {
+    display: block;
+}
+
+.acc_body_bg {
+    background: url(../img/acc_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brief_tab_nav {
+    position: unset !important;
+    padding: 0%;
+}
+
+.brief_tab_nav button {
+    width: 100%;
+}
+
+.brief_tab_nav .brf-type {
+    width: 100%;
+}
+
+.brief_tab_nav .nav-item {
+    width: 100%;
+}
+
+.brief_tab_nav .nav-link {
+    color: var(--brand-navy, #1B2033);
+}
+
+.brief_tab_nav .nav-link.active {
+    border: 2px solid #1B2033;
+    box-shadow: none;
+    padding: 16px;
+    height: 79px;
+    color: var(--brand-navy, #1B2033);
+}
+
+.brief_tab_nav .nav-link.active.opt::after,
+.brief_tab_nav .nav-link.active.opt::after {
+    opacity: 1;
+    transform: none;
+}
+
+.brief_tab_nav .nav-link.active::after {
+    content: "";
+    display: inline-block;
+    flex: none;
+    width: 18px;
+    height: 14px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.25s, transform 0.35s var(--ease);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 14'%3E%3Cpath d='M1.5 7.5c2 1.6 3.4 3 4.6 5 2.6-5 6-8.6 10.4-11.5' fill='none' stroke='%23d7263d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.brief_tab_pane {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.breif_brf_out {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.breif_brf_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.brief_brf_p {
+    color: var(--brand-slate, #42475A);
+
+    /* body / small */
+    font-family: "Schibsted Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    /* 21.7px */
+    margin-bottom: 0%;
+}
+
+.brief_brf_p2 {
+    color: var(--brand-navy, #1B2033);
+
+    /* body / small */
+    font-family: "Schibsted Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    /* 21.7px */
+    margin-bottom: 0%;
+}
+
+.brief_tab_pane input::placeholder {
+    color: var(--brand-navy, #1B2033);
+
+    /* body / regular */
+    font-family: "Schibsted Grotesk";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 27.2px */
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile_none_sk {
+        display: block;
+    }
+
+    .desk_none_sk {
+        display: none;
+    }
+
+    .acc_wrap {
+        width: 327px;
+    }
+
+    .acc_h2 {
+        text-wrap-style: unset;
+    }
+
+    .acc_iya {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .acc_dowm_p {
+        font-size: 18px;
+    }
+
+    .acc_body_bg {
+        background: url(../img/acc_bg_ph.png);
+        padding: 49px 0 56px;
+    }
+
+    .acc_tr_out {
+        gap: 32px !important;
+    }
+
+    .acc_btn_in span {
+        color: var(--brand-navy, #1B2033) !important;
+    }
+
+    .acc_body_bg .acc-panel {
+        padding: 32px 24px;
+    }
+
+    .brief_sec {
+        padding: 0px;
+        margin-top: 80px;
+    }
+
+    .brief_brf_band {
+        padding: 48px 0px 56px 0px;
+        background-color: #FAFAFA;
+    }
+
+    .brief_brf_band .brf-form {
+        gap: 32px;
+    }
+
+    .brief_brf_band .brf-row {
+        gap: 32px;
+    }
+
+    .brief_tab_pane .brf-panel {
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    .brief_field {
+        margin-top: 8px;
+    }
+
+    .brief_brf_textarea {
+        min-height: auto !important;
+    }
+
+    .brief_basket {
+        font-size: 22px !important;
+    }
+
+    .brief_ac_ {
+        font-size: 26px !important;
+    }
+
+    .brief_total {
+        font-size: 28px !important;
+    }
+
+}
+
+@media only screen and (min-width: 780px) and (max-width:991px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1151px) {}
+
+@media only screen and (min-width: 1152px) and (max-width:1279px) {}
+
+
+@media only screen and (min-width: 1280px) and (max-width:1348px) {}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {}

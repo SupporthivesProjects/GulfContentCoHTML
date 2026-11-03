@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
   <section class="acc-hero ink-bg under-nav" aria-labelledby="accT">
-    <div class="wrap">
+    <div class="wrap acc_wrap">
       <div class="acc-title">
         <div class="acc-copy">
           <p class="pen rv in" style="">good to see you</p>
@@ -22,8 +22,8 @@
     </div>
   </section>
 
-  <section class="acc-body" aria-label="Account details">
-    <div class="wrap">
+  <section class="acc-body acc_body_bg" aria-label="Account details">
+    <div class="wrap acc_wrap">
       <div class="acc-details">
         <form class="acc-panel p1 rv in" id="detailsForm" novalidate="" aria-labelledby="pdT" style="">
           <h2 id="pdT">Personal details</h2>
@@ -56,6 +56,5 @@
       </div>
     </div>
   </section>
-
-
+   
 <?php include 'includes/footer.php'; ?>
