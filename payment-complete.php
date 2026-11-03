@@ -1,12 +1,11 @@
 <?php include 'includes/header.php'; ?>
 <div class="ink-bg pay-page under-nav pay-done">
-  <section class="wrap pay-state" aria-labelledby="payTitle">
+  <section class="wrap pay-state p-state" aria-labelledby="payTitle">
     <div class="pay-scraps" id="payScraps" aria-hidden="true"></div>
     <div class="pay-title">
       <div class="pay-copy">
         <h1 class="ptitle" id="payTitle" data-lines>Payment <i>complete</i></h1>
         <p class="lead rv">Your writers have the brief. Here is where it goes next.</p>
-        <p class="pay-ref rv" id="payRef"></p>
       </div>
       <div class="pay-amt rv"><span class="cap">Amount paid</span><span class="pen" id="payAmt">$351.54</span></div>
     </div>
