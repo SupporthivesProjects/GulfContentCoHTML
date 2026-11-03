@@ -105,7 +105,7 @@ a{color:inherit;text-decoration:none}
 .copy .lead{color:var(--muted)}
 /* v1.8 dark band */
 .dark{background:var(--navy);color:#fff}.dark .h2{color:#fff}.dark .h2 i{color:var(--lred)}.dark .lab{color:var(--lred)}.dark .lead{color:var(--ondark)}
-.edit-track{height:260vh}
+/* .edit-track{height:260vh} */
 .edit-stick{position:sticky;top:0;min-height:100vh;display:flex;align-items:center}
 .edit-grid{display:grid;grid-template-columns:minmax(0,460px) minmax(0,1fr);gap:clamp(40px,6vw,120px);align-items:center}
 .count{margin-top:40px;display:flex;gap:24px;align-items:baseline}
