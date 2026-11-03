@@ -105,7 +105,7 @@
         });
         </script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
+           document.addEventListener("DOMContentLoaded", () => {
                 const footer = document.querySelector(".site-foot");
                 const footerSay = document.querySelector("#say");
                 if (!footer) return;
@@ -120,6 +120,7 @@
                 });
                 observer.observe(footer);
             });
+            
         </script>
         <script>
         AOS.init();
