@@ -5,7 +5,7 @@
     <div class="wf" id="w1" style="left:35px;top:88%"></div>
     <div class="wf" id="w2" style="left:380px;top:94.5%"></div>
   </div>
-  <div class="wrap">
+  <div class="wrap hero-mob">
     <div class="copy">
       <h1 class="h1"><span class="ln"><span>We take the</span></span><span class="ln"><span><i>waffle</i> out.</span></span></h1>
       <p class="lead rv">Blog posts, website copy, scripts and captions from writers who edit as hard as they write. You get copy that says something, in your voice.</p>
@@ -13,12 +13,12 @@
         <a href="#" class="btn btn-navy"><i class="ink"></i><span class="roll"><span>Order content</span><span>Order content</span></span></a>
         <a href="#" class="btn btn-grey"><i class="ink"></i><span class="roll"><span>Write with us</span><span>Write with us</span></span></a>
       </div>
-      <div class="start" aria-hidden="true">
+      <div class="start d-none d-md-block" aria-hidden="true">
         <svg viewBox="0 0 90 60"><path d="M84 44C62 58 30 52 14 20M14 20l-1 13M14 20l11 5" fill="none" stroke="#d7263d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="pen"><span class="hw">start here</span></span>
       </div>
     </div>
-    <div class="deskbox"><div class="desk">
+    <div class="deskbox hero-deskbox"><div class="desk">
       <div class="stack"><svg class="clip" viewBox="0 0 46 110" aria-hidden="true"><path d="M31 18V84c0 8-5 13-12 13S7 92 7 84V22c0-10 6-16 14-16s14 6 14 16v58c0 5-3 8-7 8s-7-3-7-8V28" fill="none" stroke="#9aa1ad" stroke-width="3" stroke-linecap="round"/></svg><div class="sheet s3"></div><div class="sheet s2"></div>
       <div class="paper">
         <span class="hole" style="top:17%"></span><span class="hole" style="top:47%"></span><span class="hole" style="top:77%"></span>
@@ -36,7 +36,7 @@
   <button class="cue" id="cue" aria-label="Scroll to the next section"><span class="pen"><span class="hw" id="cueT">keep reading</span></span><svg viewBox="0 0 24 44" aria-hidden="true"><path pathLength="1" d="M12 2c-1 12 1 24 0 38M4 31c3 3 6 6 8 10 2-4 5-7 8-10"/></svg></button>
 </section>
 
-<section class="edit-sec" id="editSec">
+<section class="edit-sec home-how-it-works edit-sec" id="editSec">
   <div class="edit-track" id="editTrack">
     <div class="edit-stick">
       <div class="wrap edit-grid">
@@ -52,7 +52,7 @@
   </div>
 </section>
 
-<section class="sec" id="svcSec">
+<section class="sec home-how-it-works" id="svcSec">
   <div class="wrap">
     <div class="head rv">
       <div><span class="lab">contents</span><h2 class="h2">What we write,<br><i>and from what price</i></h2></div>
@@ -97,7 +97,7 @@
   </div>
 </section>
 
-<section class="sec dark">
+<section class="sec dark home-how-it-works">
   <div class="wrap">
     <div class="head rv">
       <div><span class="lab">writer grades</span><h2 class="h2">Choose who writes it,<br><i>every grade edited</i></h2></div>
@@ -107,7 +107,7 @@
   </div>
 </section>
 
-<section class="sec band">
+<section class="sec band home-how-it-works">
   <div class="wrap">
     <div class="head rv">
       <div><span class="lab">one we did earlier</span><h2 class="h2">A press release, <i>before and after</i></h2></div>
@@ -120,7 +120,7 @@
   </div>
 </section>
 
-<section class="sec">
+<section class="sec home-how-it-works">
   <div class="wrap">
     <div class="head rv">
       <div><span class="lab">the order</span><h2 class="h2">How an order <i>works</i></h2></div>
@@ -135,10 +135,10 @@
   </div>
 </section>
 
-<section class="sec band">
+<section class="sec band home-last-sec">
   <div class="wrap">
     <div class="join rv">
-      <button class="sticky" id="sticky" aria-controls="jform" aria-expanded="false">Must enjoy deleting their own sentences.<span class="hint">Peel me off</span><span class="ear"></span></button>
+      <button class="sticky d-none d-md-block" id="sticky" aria-controls="jform" aria-expanded="false">Must enjoy deleting their own sentences.<span class="hint">Peel me off</span><span class="ear"></span></button>
       <div class="jform" id="jform"><span class="t">Good. Send us your best work.</span><form id="jf" novalidate><label class="field" for="jEmail"><span class="fl">Your email</span><span class="fv"><input id="jEmail" type="email" autocomplete="email" placeholder="you@example.com"></span></label><label class="field" for="jWhat"><span class="fl">What you write best</span><span class="fv"><input id="jWhat" type="text" placeholder="Tech, travel, food"></span></label><button class="btn btn-navy" type="submit"><i class="ink"></i><span class="roll"><span>Send me the test</span><span>Send me the test</span></span></button></form><span class="ok">Thanks. The test is on its way.</span></div>
       <div><span class="lab" style="color:var(--lred)">join us</span><h2 class="h2">Write for <i>Gulf Content Co.</i></h2><p class="lead">We work with specialist writers across the Gulf and beyond. Tell us what you write best and we will send a short paid test.</p></div>
       <a href="#" class="btn btn-red"><i class="ink"></i><span class="roll"><span>Apply to write</span><span>Apply to write</span></span></a>
