@@ -13,17 +13,24 @@
     border-radius: 2px;
     padding: 14px 20px;
 }
-#loginForm label input{
-    font-size: 17px;
-    line-height: 160%;
+.auth-fields .field .fl{
+    color: var(--red);
 }
 #signupForm .auth-fields label{
     width: 100%;
+    border-radius: 2px;
+    padding: 14px 20px;
 }
 #forgotForm .auth-fields label{
     width: 100%;
+    border-radius: 2px;
+    padding: 14px 20px;
 }
-
+#setForm .auth-fields label{
+    width: 100%;
+    border-radius: 2px;
+    padding: 14px 20px;
+}
 
 
 
